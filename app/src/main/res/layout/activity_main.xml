@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    FrameLayout as the Parent for all Views and Pages, simply because of its overlapping ability
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/frame_layout_main"
+    style="@style/MainLayoutABND"
+    tools:context="com.fablwesn.www.abndquizbyfablwesn.MainActivity">
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                               Start Page
+                                               ¯¯¯¯¯¯¯¯¯¯
+            The first LinearLayout contains the first page shown after starting the application.
+            Here you can see the Header-ImageView, an as an TextView disguised ImageButton
+            triggering a secret question on press)
+            There are also all User-Profiles listed here, where you can create, load or delete
+            a user (handled per SharedPreferences, up to 3 profiles at the same time).
+            On the bottom is a small Notice-TextView.
+    -->
+    <LinearLayout
+        android:id="@id/linlayout_parent_start_page"
+        style="@style/LinLayoutStartScreenMain">
+
+        <!-- header (with "TextButton") -->
+        <include layout="@layout/view_part_header_merge" />
+
+        <!-- Profile User One -->
+        <include
+            android:id="@id/start_page_profile_one"
+            layout="@layout/view_part_profile_tab_rel_layout" />
+        <!-- Profile User Two -->
+        <include
+            android:id="@id/start_page_profile_two"
+            layout="@layout/view_part_profile_tab_rel_layout" />
+        <!-- Profile User Three -->
+        <include
+            android:id="@id/start_page_profile_three"
+            layout="@layout/view_part_profile_tab_rel_layout" />
+
+        <TextView
+            android:id="@id/start_page_notice_text"
+            style="@style/NoticeTextCreateUser" />
+
+    </LinearLayout>
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                         CreateUser-Wizard Page(s)
+                                         ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+           Before starting the Quiz the user needs to create a profile to enter his name, gender
+           and to choose his favorite avatar - its 3 subPages long
+           This on is being inflated when the user wants to create a new Profile and is being
+           removed as soon as a profile has been loaded and the quiz is being started.
+    -->
+    <ViewStub
+        android:id="@id/viewstub_linlay_parent_create_wizard"
+        style="@style/ViewStubLinLayoutCreateWizard"
+        android:inflatedId="@id/linlay_parent_create_wizard"
+        android:layout="@layout/view_stub_create_user_wizard" />
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                             Game Page
+                                             ¯¯¯¯¯¯¯¯¯
+               where all the action takes place, contains the whole game and the menus inside
+    -->
+    <ViewStub
+        android:id="@id/viewstub_linlay_parent_game_screen"
+        style="@style/ViewStubLinLayoutGameScreen"
+        android:inflatedId="@id/linlay_parent_game_screen"
+        android:layout="@layout/view_stub_game_screen" />
+    <!--_________________________________________________________________________________________-->
+</FrameLayout>

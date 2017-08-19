@@ -1,0 +1,286 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">ABND Quiz by fablwesn</string>
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                                  Narrator Text
+                                                  ¯¯¯¯¯¯¯¯¯¯¯¯¯
+    -->
+    <!-- text beneath the HeaderImg -->
+    <string name="btn_header_txt" translatable="false">scientia ipsa potentia est</string>
+
+    <!--
+        BodyText in createUserWizard, regular
+    -->
+    <!-- asking for the name -->
+    <string name="intro_ask_name_create_user">Salve!\nGlad you decided to take on the challenge.\nAfter all, knowledge is power - ipso facto!\n\nFirst, I\'ll need your name to start.\nQuod nomen tibi est?</string>
+    <!-- asking user gender -->
+    <string name="name_mention_ask_gender_create_user"><xliff:g example="Fablwesn" id="userName">%s</xliff:g>, was it?\nWow! That name is glowing with knowledge!\n\nExcuse my inappropriate question but my eyesight isn\'t what it used to be.\nSay, are you male or female?</string>
+    <!-- asking to chose a profile avatar -->
+    <string name="choose_avatar_create_user">ultimum nec minimum\ndescribe yourself!</string>
+
+    <!-- countdown till the question starts -->
+    <string name="seconds_till_start">Question in\n<xliff:g example="3" id="timer">%s</xliff:g></string>
+
+    <!-- bonus question asking -->
+    <string name="want_start_bonus_question">Well done, student. You want to try a Bonus Challenge?\nBeware, it is GameOver if you lose. But, you can duplicate your points gained for the previous question - jokers disabled.\nBonusQuestions left: %1$d</string>
+
+    <!-- feedback menu -->
+    <string name="feedback_menu_body_text">As this app is part of a learning process, you would do me a great favour sending me feedback of any kind.\nFound a bug? Wanna praise me? Suggest new Questions? Anything! ʘ‿ʘ\n\nThanks a lot! ヽ(´ー｀)ノ</string>
+
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                             GameScreen Title Text
+                                             ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+    -->
+    <!-- Title: GameInfoPage -->
+    <string name="title_game_info_page">About ABND Quiz</string>
+    <!-- Title: GameHelpPage -->
+    <string name="title_game_help_page">Quiz Rules</string>
+    <!-- Title: GameCategorySelectionPage -->
+    <string name="title_game_category_selection">Choose a Category</string>
+
+    <string name="title_game_category_a_selected">Animals chosen</string>
+    <string name="title_game_category_b_selected">Books chosen</string>
+    <string name="title_game_category_n_selected">Netflix and Movies chosen</string>
+    <string name="title_game_category_d_selected">Digital World chosen</string>
+    <string name="title_game_value_selection_default">Chose Difficulty</string>
+    <string name="title_game_easy_chosen">You chose the easy way ( ͡° ͜ʖ ͡°)</string>
+    <string name="title_game_hard_chosen">You chose the hard way щ（ﾟДﾟщ）</string>
+
+
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                               Misc Question
+                                               ¯¯¯¯¯¯¯¯¯¯¯¯¯
+    -->
+    <!-- SECRET Question-->
+    <string-array name="question_secret">
+        <item>Answer to the Ultimate Question of Life, the Universe, and Everything?</item>
+        <item>42</item>
+        <item>0101010</item>
+        <item>Love</item>
+        <item>Pizza</item>
+    </string-array>
+    <string name="secret_toast_start_page_profiles">Secret Question Triggered.\n\nwill initialized on UserLoad, if it hasn\'t been answered already\n</string>
+
+    <!-- CheatCode  -->
+    <string name="question_cheat">Manic Miner, released 1983, featured one of the first cheat-codes in game history.\nWhat was the code used to activate it?</string>
+    <string name="answer_cheat">6031769</string>
+    <string name="hint_cheat">Hint: 7 digits total</string>
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                             GameScreen Body Text
+                                             ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+    -->
+    <!-- InfoPage Text -->
+    <string name="body_game_info_page">This app was made for the Nanodegree-Course by Udacity and Google.\nIt\'s the third project-submission, subject being a simple quiz\n\nThe professor is based on a real person btw, my old Latin-teacher *shivers*\n\nI hope you\'ll enjoy it (｡◕‿◕｡)\nHave fun!</string>
+    <string name="body_game_start_page">Salve student.\n\n You here for a little challenge?\nThere may be some rewards, if you do good &#8230;</string>
+
+    <!-- HelpPage Tutorial Text -->
+    <string name="tutorial_game_help_page">To start the Quiz, select one of the four categories and submit with the Next-Button on the bottom.\n\nAfterwards, you can select the difficulty.\nThe question starts after you have confirmed your input with "Begin"\n\nYou have 10 seconds to answer the question and the possibility to use up to 2 jokers per question.\n\nUsing the Time Joker, you gain 10 more seconds to answer, but you lose 30\%% of the point-value for that question.\nUsing the Chance Joker, reduces the amount of possible answers to 2, but you lose 50\%% of the point-value for that question.\n\nIf you answer correctly, the Points get added to your current Score and you may chose to take on a risky Bonus Question, as long as there is one left.\n\nIf you chose to skip the Bonus Question, you may select the category and difficulty for the next question.\n\nIf you chose to take on the risky Bonus Question, you can double the points gained for the previous question. But be aware, the jokers are disabled and when answering incorrectly, it is Game Over!\n\nIt is also Game Over, if you answer any other questions incorrectly or the time runs out.\nIn this case, a new round will start, with reseted score and question-progress.\n\nTo win the game, you have to answer all questions, bonus ones excluded, available!\nI wonder how many there are?)\n\nAnd I wonder if the rumours about the secret question are true &#8230; please look into it</string>
+
+    <!--_________________________________________________________________________________________-->
+
+
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                                  System Text
+                                                  ¯¯¯¯¯¯¯¯¯¯¯
+    -->
+    <!-- highscore and achievementPoints text on each profile on the startPage -->
+    <string name="txt_profile_achievement">AP: <xliff:g example="700" id="achievementPoints">%d</xliff:g>&#160;</string>
+    <string name="txt_profile_highscore">Highscore: <xliff:g example="10000" id="highscore">%d</xliff:g>&#160;</string>
+    <!-- secondary text at the bottom of the StartPage [UNLIMITED CHARS] -->
+    <string name="txt_notice_secondary_start_page">create or load profile to start\n\nCAUTION!\nsaves are gone after deinstalling app or clearing application data</string>
+
+    <!-- HintText for the CreateUser NameEditText -->
+    <string name="hint_enter_name_create_user">type name here</string>
+    <!-- Spinner content for selecting gender in the Wizard -->
+    <string-array name="spinner_genders_create_user">
+        <item>choose gender</item>
+        <item>male</item>
+        <item>female</item>
+    </string-array>
+
+    <!-- used to display points -->
+    <string name="txt_points_game">&#160;<xliff:g example="700" id="points">%d</xliff:g></string>
+
+    <!-- mailIntent Texts -->
+    <!-- mail to send to -->
+    <string name="feedback_recipient_mail">feedback@fablwesn.com</string>
+    <!-- subject for bug reports -->
+    <string name="mail_subject_bug_report">ABND QUIZ Bug</string>
+    <!-- subject for suggestions -->
+    <string name="mail_subject_suggestion">ABND QUIZ Suggestion</string>
+    <!-- predefined text for bug reports -->
+    <string name="mail_bug_predefined_text">\%%-value of how sure you are that it was a bug and not a feature:\n\n~1\%%\n\n\n\n\nWhat exactly happened, that was to your disliking?!\n\n\n\n\nPlease tell me, as detailed and far back as possible, what you did before the "bug" occurred:</string>
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                               Button Texts
+                                               ¯¯¯¯¯¯¯¯¯¯¯¯
+    -->
+    <!-- Create User Button displayed on the StartPage -->
+    <string name="btn_create_user">wake\nup</string>
+    <!-- Load User Button displayed on the StartPage -->
+    <string name="btn_load_user">load</string>
+    <!-- Delete User Button displayed on the StartPage -->
+    <string name="btn_delete_user">clear</string>
+
+    <!-- infoPage userButton -->
+    <string name="btn_info_user_input">thanks!</string>
+    <string name="btn_help_user_input">got it</string>
+    <string name="btn_start_user_input">Bring it on</string>
+
+    <!-- Back Button displayed on the CreateUser-Wizard Page -->
+    <string name="btn_back">back</string>
+    <!-- Cancel Button displayed on the CreateUser-Wizard Page -->
+    <string name="btn_cancel_wizard">X</string>
+    <!-- Next Button displayed on the CreateUser-Wizard Page -->
+    <string name="btn_next">next</string>
+    <!-- Next Button displayed on the CreateUser-Wizard Page, on the last step -->
+    <string name="btn_next_wizard_finish">create</string>
+    <!-- Top Button n the userBar in the gameScreen -->
+    <string name="btn_menu_game">menu</string>
+
+
+    <!-- Bottom Button n the userBar in the gameScreen -->
+    <string name="btn_info_help_game">Info</string>
+
+    <!-- Score Values -->
+    <string name="btn_score_low_game">easy\n150 points</string>
+    <string name="btn_score_high_game">hard\n300 points </string>
+    <!-- confirm difficulty user input -->
+    <string name="btn_user_input_start">start</string>
+
+    <!-- statistics menu button -->
+    <string name="btn_statistics_menu">user statistics</string>
+    <!-- options menu button -->
+    <string name="btn_feedback_menu">give feedback</string>
+    <!-- quit game btn -->
+    <string name="btn_quit_game">quit game</string>
+    <string name="btn_begin_game">begin!</string>
+
+    <!-- answer button -->
+    <string name="btn_submit_answer">answer</string>
+
+    <!-- feedback menu buttons -->
+    <string name="btn_feedback_bug">report bug(s)</string>
+    <string name="btn_send_suggestion">make suggestions</string>
+    <string name="btn_donate_money">$ send money $</string>
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                                 Toasts
+                                                 ¯¯¯¯¯¯
+    -->
+    <!-- error for too short name -->
+    <string name="edt_name_error">Me paenitet. Your username must consist of at least %1$d characters</string>
+    <!-- toast spinner selection gender -->
+    <string name="toast_is_male">Sir, it\'s a pleasure to meet you. \*handshake\*</string>
+    <string name="toast_is_female">Milady, your presence honours me. \*handkiss\*</string>
+    <!-- error for gender -->
+    <string name="spin_gender_error">Mea culpa. I swear, it\'s my eyesight. Please!</string>
+    <!-- error for saving -->
+    <string name="create_user_error">Save failed. Please restart the app and try again. Sorry :(</string>
+
+    <!-- on freezeTimeJoker used -->
+    <string name="freeze_joker_used_string">Time frozen\nLet it go, Prof!\n\u2603\n\nPointValue for this question\n-30\%%\n\nTime to answer\n+100\%%</string>
+    <!-- on chanceJoker used -->
+    <string name="chance_joker_used_string">Fifty!\nGotta be fair, Prof!\n\u2702\n\nPointValue for this question\n-50\%%\n\nchance for correct answer\n+100\%%</string>
+
+    <!-- secret question -->
+    <string name="secret_cheat_question_answered_wrong">WRONG!! ( ͡° ͜ʖ ͡°)</string>
+
+    <!-- achievement toast -->
+    <string name="achievement_unlocked">ACHIEVEMENT UNLOCKED\n\n\n( •_•)\n( •_•)>⌐■-■\n(⌐■_■)\n\n</string>
+
+    <!-- error displayed for statistics menu -->
+    <string name="statistics_menu_button_error">You need at least 50 AchievementPoints for access!\n\nHINT: Turn the lights on and flex your brain, there\'s a hidden question somewhere</string>
+
+    <!-- on empty questionCatalogues -->
+    <string name="no_questions_left_toast">nothing left in here\n\nGood work!</string>
+
+    <!-- after activating cheat mode -->
+    <string name="cheat_mode_activated">this &#8230; power &#8230;\n\n&#160;&#160;&#160;&#160;&#160;&#160;&#160;ლ(｀ー´ლ)\n\n\n\n\n50 AP added\nStatistics Menu unlocked</string>
+
+    <!-- right answer / gameOver -->
+    <string name="right_answer_toast">YES!\n\ You have answered Question %1$d correctly! ʘ‿ʘ\n\nNext is the BonusQuestion or Question #%2$d!\n\nCurrent Score: %3$d</string>
+    <string name="wrong_answer_toast">Wrong Answer! ಥ_ಥ\n\nGame Over, unfortunately.\n\nYou failed at Question %1$d\n\nEnd Score: %2$d</string>
+    <!-- timeout game over -->
+    <string name="time_out_toast">Time Out! ٩(͡๏̯͡๏)۶ \n\nGame Over, unfortunately.\n\nYou failed at Question %1$d\n\nEnd Score: %2$d</string>
+    <!-- GameWon -->
+    <string name="game_won_toast">Wow you have answered EVERY Question correctly!! ლ(｀ー´ლ) \n\n（　ﾟДﾟ） %1$d in total!\n\nTap yourself on your shoulder and try to beat your highscore!\n\nEnd Score: %2$d</string>
+    <!-- bonus questions answered right -->
+    <string name="bonus_right_toast">Excellent!\nYou have doubled your previous %1$d to %2$d!\nBonus Question %3$d of %4$d answered.</string>
+    <!-- when the send money button is pressed in the menu-->
+    <string name="send_money_blush">Nah, I\'m just kidding (｡◕‿◕｡)\n\nbut thank you so much, for considering it! ヽ(´▽`)/</string>
+
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                                 Dialog Box on exit
+                                                 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+    -->
+    <!-- DialogBox appearing after pressing the deleteProfile Button on the startPage -->
+
+    <!-- Title-->
+    <string name="dialog_yes_no_delete_profile_title">Delete User</string>
+    <!-- Message -->
+    <string name="dialog_yes_no_delete_profile_message">Are you sure you want to delete user\n\n<xliff:g example="Fablwesn" id="userName">%s</xliff:g></string>
+    <!-- Yes and No buttons -->
+    <string name="dialog_yes_no_delete_profile_yes">yes</string>
+    <string name="dialog_yes_no_delete_profile_no">no</string>
+
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                                Statistics Page
+                                                ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+    -->
+    <!-- Category Titles -->
+    <string name="title_animal_category_statistic">animals chosen %1$dx total</string>
+    <string name="title_books_category_statistic">books chosen %1$dx total</string>
+    <string name="title_netflix_category_statistic">netflix chosen %1$dx total</string>
+    <string name="title_digital_category_statistic">digital chosen %1$dx total</string>
+    <!-- Main Statistics shown only on the first, the general tab -->
+    <string name="main_statistics_general">Total Logins:\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009%1$s\nTimes Won:\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009%2$s\nHighscore:\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009%3$s</string>
+    <!-- question statistics -->
+    <string name="statistics_questions_all">Questions asked: %1$d\u0009\u0009\u0009\u0009longest Streak: %2$d</string>
+    <string name="statistics_questions_bonus">Bonus risked: %1$d\u0009\u0009\u0009\u0009longest Streak: %2$d</string>
+    <string name="statistics_questions_easy">Easy Difficulty: %1$d</string>
+    <string name="statistics_questions_hard">Hard Difficulty: %1$d</string>
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                              Content Descriptions
+                                              ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+    -->
+    <!--_________________________________________________________________________________________-->
+    <!-- Header Image -->
+    <string name="header_img_content_description">Header Image, displaying ABND Quiz and a cute brain - juggling light bulbs</string>
+    <!-- Avatar Image on StartPage -->
+    <string name="avatar_img_start_page_content_description">Avatar Image shown after starting the app, no existing profile chosen shows a sleeping brain.</string>
+    <!-- AlarmClock Image on StartPage -->
+    <string name="clock_img_start_page_content_description">Clock Image shown after next to the create user button. To wake up the sleeping Avatar Brain-Image</string>
+    <!-- Footer Image on  CreateUserWizard -->
+    <string name="footer_img_wizard_content_description">Image for decoration at the bottom.</string>
+    <!-- Avatar Images Description -->
+    <string name="avatar_img_content_description">Displayed Avatar. 6 male, 6 female and one placeholder version exists</string>
+
+    <!--_________________________________________________________________________________________-->
+</resources>

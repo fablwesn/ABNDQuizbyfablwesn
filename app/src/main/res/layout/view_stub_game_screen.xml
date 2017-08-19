@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gamescreen, Top and Bottom MenuBars are visible throughout, middle changes depending
+ on the needs of the user. Also contains the menu
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinLayoutGameScreenParent">
+
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <!-- Top Menu Bar, visible throughout the game -->
+    <include layout="@layout/view_part_user_menu_bar_top_game" />
+
+    <!-- strokeSeparator with bottom margin -->
+    <View style="@style/ViewDarkSeparatorLineGameTop" />
+
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <!-- title text-->
+    <TextView
+        android:id="@id/game_screen_title_text"
+        style="@style/TextViewTitleHeaderGame" />
+
+    <!-- the headerImage of the InfoPage, triggers
+         the secretQuestions onClick (if it hasn't already) -->
+    <ImageButton
+        android:id="@id/img_btn_secret_question"
+        style="@style/HeaderImgBtnStartPage"
+        android:onClick="toggleSecretQuestionInGame"
+        android:visibility="gone" />
+
+
+    <!-- the prof, headerImage of all other Pages except the Statistics- and FeedbackMenu -->
+    <ImageView
+        android:id="@id/img_header_professor_game"
+        style="@style/ImageViewProfessorHeaderGame" />
+
+
+    <!-- menu, buttons and textView while no question is being asked -->
+    <RelativeLayout
+        android:id="@id/rellay_game_screen_menu_parent"
+        style="@style/RelLayoutMenuFrameGame">
+
+        <!-- main text occupying whole page  -->
+        <TextView
+            android:id="@id/game_screen_menu_text_main"
+            style="@style/TextViewMenuMainGame" />
+
+        <!-- explanationText only visible on the HelpPage  -->
+        <ScrollView android:id="@id/scroll_tutorial"
+            style="@style/ScrollViewHelpWindowGame"
+            android:visibility="gone">
+
+            <TextView style="@style/TextHelpMenuMain"/>
+
+        </ScrollView>
+
+        <!-- space for buttons alignment -->
+        <Space
+            android:id="@id/space_rellayout_center"
+            style="@style/SpaceViewCenterRelLayout" />
+
+        <!-- category A Button -->
+        <ImageButton
+            android:id="@id/img_btn_category_a_game"
+            style="@style/ImgButtonCategoryA"
+            android:onClick="removeFocusCategorySelection"
+            android:visibility="gone" />
+
+        <!-- category B Button -->
+        <ImageButton
+            android:id="@id/img_btn_category_b_game"
+            style="@style/ImgButtonCategoryB"
+            android:onClick="removeFocusCategorySelection"
+            android:visibility="gone" />
+
+        <!-- category N Button -->
+        <ImageButton
+            android:id="@id/img_btn_category_n_game"
+            style="@style/ImgButtonCategoryN"
+            android:onClick="removeFocusCategorySelection"
+            android:visibility="gone" />
+
+        <!-- category D Button -->
+        <ImageButton
+            android:id="@id/img_btn_category_d_game"
+            style="@style/ImgButtonCategoryD"
+            android:onClick="removeFocusCategorySelection"
+            android:visibility="gone" />
+
+        <!-- 150 Points Button -->
+        <Button
+            android:id="@id/btn_sore_value_low_game_screen"
+            style="@style/ButtonScoreValueLow"
+            android:onClick="startQuestion"
+            android:visibility="gone" />
+        <!-- 300 Points Button -->
+        <Button
+            android:id="@id/btn_sore_value_high_game_screen"
+            style="@style/ButtonScoreValueHigh"
+            android:onClick="startQuestion"
+            android:visibility="gone" />
+
+        <!-- Menu Buttons -->
+        <!-- Statistics -->
+        <Button
+            android:id="@id/btn_statistics_menu"
+            style="@style/ButtonStatisticsMenu"
+            android:onClick="openStatistics"
+            android:visibility="gone" />
+
+        <!-- Feedback -->
+        <Button
+            android:id="@id/btn_feedback_menu"
+            style="@style/ButtonFeedbackMenu"
+            android:onClick="openFeedbackMenu"
+            android:visibility="gone" />
+
+        <!-- Quit App -->
+        <Button
+            android:id="@id/btn_quit_game_menu"
+            style="@style/ButtonQuitGameMenu"
+            android:onClick="closeApplication"
+            android:visibility="gone" />
+
+        <!-- textView counting down till the question starts -->
+        <TextView
+            android:id="@id/game_screen_short_countdown_text"
+            style="@style/TextViewShortCountdownGame" />
+
+        <!-- BackgroundImage while the Countdown is running, before the question is displayed -->
+        <ImageView
+            android:id="@id/game_screen_short_countdown_background_image"
+            style="@style/ImageViewShortCountdownBackground"
+            android:visibility="gone" />
+
+        <!-- QuestionText for CheatActivation -->
+        <TextView style="@style/TextCheatQuestion"
+            android:id="@id/cheat_code_text_question"
+            android:visibility="gone" />
+
+        <!-- EditText for CheatActivation -->
+        <EditText style="@style/TextEditCheatAnswer"
+            android:id="@id/cheat_code_text_answer"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <!-- contains timeLeftText and timeLeftProgressBar while a question is being asked -->
+    <LinearLayout
+        android:id="@id/question_screen_time_left_parent"
+        style="@style/LinLayoutTimeToAnswer"
+        android:visibility="gone">
+
+        <!-- small text on left, decrements every second -->
+        <TextView
+            android:id="@id/game_time_left_to_answer"
+            style="@style/TextTimeLeftToAnswer" />
+
+        <!-- right of the text, covers the rest of the screen with an EndMargin as big as the Text
+             on the left. Decreases progress by 10% every second when the timer is at 10 and below -->
+        <ProgressBar
+            android:id="@id/game_time_progress_bar"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/medium"
+            android:layout_marginEnd="@dimen/large"
+            android:background="@drawable/style_score_gamescreen_secondary" />
+
+    </LinearLayout>
+
+    <!-- displays the current userPoints, resets on gameOver -->
+    <TextView
+        android:id="@id/game_current_points_text"
+        style="@style/TextCurrentUserPoints"
+        android:visibility="gone" />
+
+    <!-- TextView where the question asked is displayed -->
+    <TextView
+        android:id="@id/game_question_field_text"
+        style="@style/TextQuestionAsked"
+        android:visibility="gone" />
+
+    <!-- contains 4 RadioButtons for the possible Answers and for accepting/declining the bonus questions
+           Question for Reviewer:
+             Is it possible to have a RadioGroup behave like a RelativeLayout? or to link
+             2 RadioGroups together? I have implanted the limitation of only one button checked
+             at a time through code, because I couldn't find a simpler solution, and I really wanted those radio
+             buttons aligned in a grid-like look
+    -->
+    <RelativeLayout
+        android:id="@id/game_parent_radio_buttons"
+        style="@style/RelLayoutRadioButtonParent"
+        android:visibility="gone">
+
+        <Space
+            android:id="@id/space_radio_buttons"
+            style="@style/SpaceViewCenterRelLayout" />
+
+        <RadioButton
+            android:id="@id/radio_button_one"
+            style="@style/RadioButton01" />
+
+        <RadioButton
+            android:id="@id/radio_button_two"
+            style="@style/RadioButton02" />
+
+        <RadioButton
+            android:id="@id/radio_button_three"
+            style="@style/RadioButton03" />
+
+        <RadioButton
+            android:id="@id/radio_button_four"
+            style="@style/RadioButton04" />
+
+
+    </RelativeLayout>
+
+    <!--
+         checkboxes used for the SecretQuestion
+    -->
+    <RelativeLayout
+        android:id="@id/game_parent_check_boxes"
+        style="@style/RelLayoutCheckBoxParent"
+        android:visibility="gone">
+
+        <Space
+            android:id="@id/space_check_boxes"
+            style="@style/SpaceViewCenterRelLayout" />
+
+        <CheckBox
+            android:id="@id/check_box_one"
+            style="@style/CheckBox01" />
+
+        <CheckBox
+            android:id="@id/check_box_two"
+            style="@style/CheckBox02" />
+
+        <CheckBox
+            android:id="@id/check_box_three"
+            style="@style/CheckBox03" />
+
+        <CheckBox
+            android:id="@id/check_box_four"
+            style="@style/CheckBox04" />
+
+
+    </RelativeLayout>
+
+    <!--
+         MenuPages
+    -->
+    <!-- Statistics -->
+    <LinearLayout
+        android:id="@id/statistics_menu_page_parent"
+        style="@style/LinLayBigMenuParentsGame"
+        android:visibility="gone">
+
+        <!-- Tab Buttons for navigation -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@id/img_btn_statistics_general"
+                style="@style/ImgBtnCategoryGeneralStatistics" />
+
+            <ImageButton
+                android:id="@id/img_btn_statistics_animals"
+                style="@style/ImgBtnCategoryAnimalsStatistics" />
+
+            <ImageButton
+                android:id="@id/img_btn_statistics_books"
+                style="@style/ImgBtnCategoryBooksStatistics" />
+
+            <ImageButton
+                android:id="@id/img_btn_statistics_netflix"
+                style="@style/ImgBtnCategoryNetflixStatistics" />
+
+            <ImageButton
+                android:id="@id/img_btn_statistics_digital"
+                style="@style/ImgBtnCategoryDigitalStatistics" />
+
+        </LinearLayout>
+
+        <!-- Thick separator -->
+        <View style="@style/ViewSeparatorThickStatistics" />
+
+        <!-- TitleText -->
+        <TextView
+            android:id="@id/txt_title_statistics_menu"
+            style="@style/TxtStatisticsTitle" />
+
+        <!-- General Statistics Text -->
+        <TextView
+            android:id="@id/txt_general_statistics_menu"
+            style="@style/TxtStatisticsGeneralMain" />
+
+        <!-- secondary separator -->
+        <View style="@style/ViewSeparatorSecondary" />
+
+        <!-- QuestionsOverall Text A -->
+        <TextView
+            android:id="@id/txt_statistics_a_top"
+            style="@style/TxtStatisticsSub" />
+
+        <!-- times answered correctly, wrong and how often the time ran out, drawable top included -->
+        <LinearLayout style="@style/LinLayStatisticsParentRWTO">
+
+            <TextView
+                android:id="@id/txt_statistics_a_right"
+                style="@style/TxtStatisticsRightCount" />
+
+            <TextView
+                android:id="@id/txt_statistics_a_wrong"
+                style="@style/TxtStatisticsWrongCount" />
+
+            <TextView
+                android:id="@id/txt_statistics_a_time_out"
+                style="@style/TxtStatisticsTimeOutCount" />
+
+        </LinearLayout>
+
+        <!-- QuestionsOverall Text B -->
+        <TextView
+            android:id="@id/txt_statistics_b_top"
+            style="@style/TxtStatisticsSub" />
+
+        <!-- times answered correctly, wrong and how often the time ran out, drawable top included -->
+        <LinearLayout style="@style/LinLayStatisticsParentRWTO">
+
+            <TextView
+                android:id="@id/txt_statistics_b_right"
+                style="@style/TxtStatisticsRightCount" />
+
+            <TextView
+                android:id="@id/txt_statistics_b_wrong"
+                style="@style/TxtStatisticsWrongCount" />
+
+            <TextView
+                android:id="@id/txt_statistics_b_time_out"
+                style="@style/TxtStatisticsTimeOutCount" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!-- Feedback -->
+    <LinearLayout
+        android:id="@id/feedback_menu_page_parent"
+        style="@style/LinLayBigMenuParentsGame"
+        android:visibility="gone">
+
+        <TextView style="@style/TextViewFeedbackMenuMain" />
+
+        <Button
+            style="@style/BtnBugReport"
+            android:onClick="reportBug" />
+
+        <Button
+            style="@style/BtnSendSuggestion"
+            android:onClick="sendSuggestion" />
+
+        <Button
+            style="@style/BtnDonateMoney"
+            android:onClick="giveMoney" />
+
+    </LinearLayout>
+
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+    <!-- border above the button bar -->
+    <View style="@style/ViewDarkSeparatorLineGameBottom" />
+
+    <!-- bottom button bar, visible throughout the game (buttons are invisible from time to time)-->
+    <RelativeLayout style="@style/RelLayoutBottomButtonsGame">
+
+        <ImageButton
+            android:id="@id/img_btn_joker_time"
+            style="@style/ImageBtnTimeJokerGame"
+            android:onClick="jokerDoubleTime" />
+
+        <Button
+            android:id="@id/btn_user_input_game_screen"
+            style="@style/ButtonSubmitAnswerGame"
+            android:onClick="userMainInput" />
+
+        <ImageButton
+            android:id="@id/img_btn_joker_chance"
+            style="@style/ImageBtnChanceJokerGame"
+            android:onClick="jokerChance" />
+
+    </RelativeLayout>
+
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+</LinearLayout>

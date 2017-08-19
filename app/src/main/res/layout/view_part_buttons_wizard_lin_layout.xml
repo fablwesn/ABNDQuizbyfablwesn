@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    contains the navigationButtons for the Wizard
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinLayoutViewPartButtonsWizard">
+
+    <!-- Space used for better button positioning-->
+    <Space style = "@style/SpaceViewPartWizardButtons"/>
+
+    <!-- BackButton -->
+    <Button style="@style/ButtonBackWizard"
+        android:onClick="previousPage" />
+
+    <!-- CancelButton -->
+    <Button style="@style/ButtonCancelWizard"
+        android:onClick="cancelWizard" />
+
+    <!-- NextButton -->
+    <Button style="@style/ButtonNextWizard"
+        android:id="@id/vp_next_wizard_btn"
+        android:onClick="checkUserInput"/>
+
+    <!-- Space used for better button positioning-->
+    <Space style = "@style/SpaceViewPartWizardButtons"/>
+
+</LinearLayout>

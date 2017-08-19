@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    single userTabs on the startPage
+
+     Question for Reviewer:
+     ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+         I use this ViewPart 3 times at the same time. Is having three Views, each having it's
+         unique id but their children sharing the same ids an issue?
+         Or is there no concern, having multiple same ids, as long as I can
+         distinguish them through their parent-ids? (kinda like parentUniqueId.getChildSharedId)
+-->
+
+<!-- headerViewPart, 2 ImgViews, 3 TxtViews, 3 Buttons
+     and one spaceWidget per profile (total of 3) -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RelLayoutViewPageProfileTabParent">
+
+    <!-- Avatar-ImageView.  Shows user's avatar
+        'drawable/img_avatar_empty.png' if there is no user -->
+    <ImageView style="@style/AvatarImgStartPage"
+        android:id="@id/start_page_avatar_img"/>
+
+    <!-- UserProfile's name, empty if no user exists -->
+    <TextView style="@style/ProfileTextViewName"
+        android:id="@id/vp_start_page_name"/>
+    <!-- UserProfile's current achievement points, empty if no user exists -->
+    <TextView style="@style/ProfileTextViewAchievementPoints"
+        android:id="@id/vp_start_page_achievements"/>
+    <!-- UserProfile's current highscore, empty if no user exists -->
+    <TextView style="@style/ProfileTextViewHighscore"
+        android:id="@id/vp_start_page_highscore"/>
+
+    <!-- Alarm-ImageView shown next to the CreateButton - disappears with it, if
+         there is an user existing -->
+    <ImageView style="@style/ClockImgStartPage"
+        android:id="@id/start_page_clock_img" />
+    <!-- CreateUser-Button, visibility 'gone' if a user already exists -->
+    <Button style="@style/ButtonStartPageCreate"
+        android:id="@id/vp_start_page_create_user"
+        android:onClick="createUser"/>
+
+    <!-- SpaceWidget used for easier alignment of the
+         LoadButton and DeleteButton -->
+    <Space style="@style/SpaceViewCenterRelLayout"
+        android:id="@id/space_rellayout_center"/>
+    <!-- LoadUser-Button, visibility 'gone' if no user exists -->
+    <Button style="@style/ButtonStartPageLoad"
+        android:id="@id/vp_start_page_load_user"
+        android:onClick="loadUser"/>
+    <!-- DeleteUser-Button, visibility 'gone' if no user exists -->
+    <Button style="@style/ButtonStartPageDelete"
+        android:id="@id/vp_start_page_delete_user"
+        android:onClick="deleteUser"/>
+
+</RelativeLayout>

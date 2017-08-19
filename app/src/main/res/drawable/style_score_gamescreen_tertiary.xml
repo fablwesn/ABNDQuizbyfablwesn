@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- used as the standard background for the userAvatar -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Border and Filling -->
+    <solid android:color="@color/colorTertiaryLight" />
+
+    <stroke
+        android:width="@dimen/tiny"
+        android:color="@color/colorTertiaryDark" />
+
+    <padding
+        android:bottom="@dimen/small"
+        android:left="@dimen/medium"
+        android:right="@dimen/medium"
+        android:top="@dimen/small" />
+
+    <corners
+        android:bottomLeftRadius="@dimen/medium"
+        android:bottomRightRadius="@dimen/medium"
+        android:topLeftRadius="@dimen/medium"
+        android:topRightRadius="@dimen/medium" />
+</shape>

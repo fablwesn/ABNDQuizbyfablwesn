@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                               Fixed Colors
+                                               ¯¯¯¯¯¯¯¯¯¯¯¯
+    -->
+    <!-- color used for shadow effects, default 50% opacity black -->
+    <color name="colorShadow">#80000000</color>
+
+    <!-- used for eye-catchers, warnings and alike -->
+    <color name="colorSignal">#E57373</color>
+    <color name="colorSignalLight">#FFCDD2</color>
+    <color name="colorSignalDark">#D32F2F</color>
+    <!--
+                                        Signal Text Dark
+    -->
+    <!-- used for headers and alike -->
+    <color name="colorTextHeaderDarkSignal">#d9B71C1C</color>
+    <!-- used for standard text -->
+    <color name="colorTextRegularDarkSignal">#8cB71C1C</color>
+    <!-- used for disabled, hints and alike -->
+    <color name="colorTextFaintDarkSignal">#66B71C1C</color>
+    <!--
+                                       Signal Text Light
+    -->
+    <!-- used for headers and alike -->
+    <color name="colorTextHeaderLightSignal">#f2FFEBEE</color>
+    <!-- used for standard text -->
+    <color name="colorTextRegularLightSignal">#b3FFEBEE</color>
+    <!-- used for disabled, hints and alike -->
+    <color name="colorTextFaintLightSignal">#80FFEBEE</color>
+
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                          Default Color Theme
+                                          ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+    -->
+    <!--
+                                        Primary Color and Accent
+    -->
+    <color name="colorPrimary">#42a5f5</color>
+    <color name="colorPrimaryLight">#e1f5fe</color>
+    <color name="colorPrimaryDark">#1976d2</color>
+
+    <color name="colorAccent">#82b1ff</color>
+    <!--
+                                             Secondary Color
+    -->
+    <color name="colorSecondary">#AED581</color>
+    <color name="colorSecondaryLight">#DCEDC8</color>
+    <color name="colorSecondaryDark">#7CB342</color>
+    <!--
+                                              Tertiary Color
+    -->
+    <color name="colorTertiary">#FFF59D</color>
+    <color name="colorTertiaryLight">#FFF9C4</color>
+    <color name="colorTertiaryDark">#FDD835</color>
+
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                                Text Colors
+                                                ¯¯¯¯¯¯¯¯¯¯¯
+    -->
+    <!--
+                                               Primary Dark
+    -->
+    <!-- used for headers and alike -->
+    <color name="colorTextHeaderDarkPrimary">#d90d47a1</color>
+    <!-- used for standard text -->
+    <color name="colorTextRegularDarkPrimary">#CC0d47a1</color>
+    <!-- used for disabled, hints and alike -->
+    <color name="colorTextFaintDarkPrimary">#660D47A1</color>
+    <!--
+                                              Primary Light
+    -->
+    <!-- used for headers and alike -->
+    <color name="colorTextHeaderLightPrimary">#f2e1f5fe</color>
+    <!-- used for standard text -->
+    <color name="colorTextRegularLightPrimary">#b3e1f5fe</color>
+    <!-- used for disabled, hints and alike -->
+    <color name="colorTextFaintLightPrimary">#80e1f5fe</color>
+    <!--
+                                              Secondary Dark
+    -->
+    <!-- used for headers and alike -->
+    <color name="colorTextHeaderDarkSecondary">#d91b5e20</color>
+    <!-- used for standard text -->
+    <color name="colorTextRegularDarkSecondary">#8c1B5E20</color>
+    <!-- used for disabled, hints and alike -->
+    <color name="colorTextFaintDarkSecondary">#661B5E20</color>
+    <!--
+                                             Secondary Light
+    -->
+    <!-- used for headers and alike -->
+    <color name="colorTextHeaderLightSecondary">#f2e8f5e9</color>
+    <!-- used for standard text -->
+    <color name="colorTextRegularLightSecondary">#b3E8F5E9</color>
+    <!-- used for disabled, hints and alike -->
+    <color name="colorTextFaintLightSecondary">#80E8F5E9</color>
+    <!--
+                                             Tertiary
+    -->
+    <color name="colorTextTertiaryDark">#FBC02D</color>
+
+    <!--_________________________________________________________________________________________-->
+</resources>

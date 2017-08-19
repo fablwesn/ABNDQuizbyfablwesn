@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="frame_layout_main" type="id" />
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                       StartScreen & Wizard
+    -->
+    <!-- parent holding the whole start page -->
+    <item name="linlayout_parent_start_page" type="id" />
+
+    <!--
+                                        CreateUserWizard ViewStub
+    -->
+    <item name="viewstub_linlay_parent_create_wizard" type="id" />
+    <item name="linlay_parent_create_wizard" type="id" />
+    <!--
+                                        GameScreen ViewStub
+    -->
+    <item name="viewstub_linlay_parent_game_screen" type="id" />
+    <item name="linlay_parent_game_screen" type="id" />
+    <!--
+                                           GameScreenMenu Parent
+    -->
+    <item name="rellay_game_screen_menu_parent" type="id" />
+    <!--
+                                           included ViewParts
+    -->
+    <!-- Profile Selection Tab fpr each user -->
+    <item name="start_page_profile_one" type="id" />
+    <item name="start_page_profile_two" type="id" />
+    <item name="start_page_profile_three" type="id" />
+
+    <item name="statistics_menu_page_parent" type="id" />
+    <item name="feedback_menu_page_parent" type="id" />
+
+    <!--
+                                        ImageViews and ImageButtons
+    -->
+    <!-- avatar image shown on StartPage, in each profile tab -->
+    <item name="start_page_avatar_img" type="id" />
+    <!-- clock image shown on StartPage, in each profile tab -->
+    <item name="start_page_clock_img" type="id" />
+
+    <!-- Bottom ImageView of the CreateUserWizard -->
+    <item name="wizard_footer_img" type="id" />
+
+    <!-- header game -->
+    <item name="img_game_header" type="id" />
+    <!-- game avatar -->
+    <item name="img_btn_game_avatar" type="id" />
+
+
+    <!-- GridLayout avatar imageButtons -->
+    <item name="imgbtn_select_avatar_one" type="id" />
+    <item name="imgbtn_select_avatar_two" type="id" />
+    <item name="imgbtn_select_avatar_three" type="id" />
+    <item name="imgbtn_select_avatar_four" type="id" />
+    <item name="imgbtn_select_avatar_five" type="id" />
+    <item name="imgbtn_select_avatar_six" type="id" />
+
+    <!-- Header Image of the GameScreen, contains the professor -->
+    <item name="img_header_professor_game" type="id" />
+
+    <!-- gameCategoryButtons -->
+    <item name="img_btn_category_a_game" type="id" />
+    <item name="img_btn_category_b_game" type="id" />
+    <item name="img_btn_category_n_game" type="id" />
+    <item name="img_btn_category_d_game" type="id" />
+
+
+    <!-- CountdownTimer background before the question comes -->
+    <item name="game_screen_short_countdown_background_image" type="id" />
+    <!--
+                                                Buttons
+    -->
+    <!-- Buttons inside the ViewPart for the Profiles (distinguish through parent!) -->
+    <item name="vp_start_page_create_user" type="id" />
+    <item name="vp_start_page_load_user" type="id" />
+    <item name="vp_start_page_delete_user" type="id" />
+    <item name="vs_create_user_name_edtxt" type="id" />
+    <item name="img_btn_secret_question" type="id" />
+    <item name="img_btn_joker_time" type="id" />
+    <item name="img_btn_joker_chance" type="id" />
+
+    <!-- Next Button in the CreateUser Wizard -->
+    <item name="vp_next_wizard_btn" type="id" />
+
+    <!-- submitAnswer button in gameScreen -->
+    <item name="btn_user_input_game_screen" type="id" />
+
+    <!-- scoreValue low Button -->
+    <item name="btn_sore_value_low_game_screen" type="id" />
+    <!-- scoreValue high Button -->
+    <item name="btn_sore_value_high_game_screen" type="id" />
+    <!-- statistics button in the menu -->
+    <item name="btn_statistics_menu" type="id" />
+    <!-- options button in the menu -->
+    <item name="btn_feedback_menu" type="id" />
+    <!-- quit button in the menu -->
+    <item name="btn_quit_game_menu" type="id" />
+    <!-- top menu bar menu button -->
+    <item name="btn_open_menu_top" type="id" />
+    <!-- top menu bar help button -->
+    <item name="btn_help_menu_top" type="id" />
+
+    <!--
+                                        TextViews & EditTexts
+    -->
+    <!-- Text displaying entered name on the StartPage
+         shared by multiple included TextViews -->
+    <item name="vp_start_page_name" type="id" />
+    <!-- Text displaying current achievement points on the StartPage
+         shared by multiple included TextViews -->
+    <item name="vp_start_page_achievements" type="id" />
+    <!-- Text displaying current highscore for this user on the StartPage
+         shared by multiple included TextViews -->
+    <item name="vp_start_page_highscore" type="id" />
+    <!-- notice TextView on the bottom of the Start Page -->
+    <item name="start_page_notice_text" type="id" />
+
+    <!-- Body TextView of the CreateUserWizard -->
+    <item name="wizard_body_text" type="id" />
+
+    <!-- Title Text of the GameScreen -->
+    <item name="game_screen_title_text" type="id" />
+
+    <!-- Main MenuText of the GameScreen -->
+    <item name="game_screen_menu_text_main" type="id" />
+
+    <!-- CountdownTimer before the question comes -->
+    <item name="game_screen_short_countdown_text" type="id" />
+
+    <!-- used for the CheatCode Question -->
+    <item name="cheat_code_text_question" type="id"/>
+    <item name="cheat_code_text_answer" type="id"/>
+
+    <!--
+                                                  Misc.
+    -->
+    <!-- Spinner, in the createUser Wizard to select user's gender-->
+    <item name="wizard_gender_spinner" type="id" />
+
+    <!--_________________________________________________________________________________________-->
+
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                                    Game Page
+                                                    ¯¯¯¯¯¯¯¯¯
+    -->
+    <!--
+                                                    ParenViews
+    -->
+    <!-- GridView from the createUserWizard, choseAvatar Page -->
+    <item name="wizard_avatar_grid_parent" type="id" />
+
+    <!-- LinLayParent TimeToAnswer -->
+    <item name="question_screen_time_left_parent" type="id" />
+
+    <!-- ScrollView holding the tutorial text -->
+    <item name="scroll_tutorial" type="id" />
+
+    <!-- RadioButtons and CheckBoxes -->
+    <!-- Parents -->
+    <item name="game_parent_radio_buttons" type="id" />
+    <item name="game_parent_check_boxes" type="id" />
+    <!-- spaces for alignment -->
+    <item name="space_radio_buttons" type="id" />
+    <item name="space_check_boxes" type="id" />
+    <!-- RadioButtons -->
+    <item name="radio_button_one" type="id" />
+    <item name="radio_button_two" type="id" />
+    <item name="radio_button_three" type="id" />
+    <item name="radio_button_four" type="id" />
+    <!-- checkboxes -->
+    <item name="check_box_one" type="id" />
+    <item name="check_box_two" type="id" />
+    <item name="check_box_three" type="id" />
+    <item name="check_box_four" type="id" />
+
+    <!--
+                                            ImageViews and ImageButtons
+    -->
+    <!-- ImageButtons used as tabs on the statistics screen -->
+    <item name="img_btn_statistics_general" type="id" />
+    <item name="img_btn_statistics_animals" type="id" />
+    <item name="img_btn_statistics_books" type="id" />
+    <item name="img_btn_statistics_netflix" type="id" />
+    <item name="img_btn_statistics_digital" type="id" />
+
+    <!--
+                                                    TextViews
+    -->
+    <!-- timeText, next to progressbar while a question is being asked -->
+    <item name="game_time_left_to_answer" type="id" />
+
+    <!-- current points and question text -->
+    <item name="game_current_points_text" type="id" />
+    <item name="game_question_field_text" type="id" />
+
+    <!-- statistics text -->
+    <item name="txt_title_statistics_menu" type="id" />
+    <item name="txt_general_statistics_menu" type="id" />
+    <item name="txt_statistics_a_top" type="id" />
+    <item name="txt_statistics_a_right" type="id" />
+    <item name="txt_statistics_a_wrong" type="id" />
+    <item name="txt_statistics_a_time_out" type="id" />
+    <item name="txt_statistics_b_top" type="id" />
+    <item name="txt_statistics_b_right" type="id" />
+    <item name="txt_statistics_b_wrong" type="id" />
+    <item name="txt_statistics_b_time_out" type="id" />
+
+    <!--
+                                                     Buttons
+    -->
+
+    <!--
+                                                      Misc.
+    -->
+
+    <!-- SpaceWidget for ButtonAlignment in Profile ViewPart-->
+    <item name="space_rellayout_center" type="id" />
+
+    <!-- timeLeftProgressBar, while a question is being asked -->
+    <item name="game_time_progress_bar" type="id" />
+
+    <!--_________________________________________________________________________________________-->
+</resources>

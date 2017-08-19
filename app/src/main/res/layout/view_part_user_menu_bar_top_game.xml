@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- displays the user bar on top of the main game -->
+<!--
+     Question for Reviewer:
+            Is it ok to reuse IDs that are used anymore and fit perfectly? In this case its about
+            the three TextViews inside, they use the same IDs as the ones on the startPage, as they
+            fulfill the same purpose and the startPage has been removed an can never co-exist with
+            these 3 TextViews.
+            Or ist it still a bad practice?
+ -->
+<LinearLayout style="@style/LinLayoutViewPartUserBarGame"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- displays selected avatar, chose a new one onClick -->
+    <ImageButton style="@style/ImageButtonAvatarGameBar"
+        android:id="@id/img_btn_game_avatar"
+        android:onClick="activateCheatModeQuestion"/>
+
+    <!-- contains the middle part -->
+    <RelativeLayout style="@style/RelLayoutViewPageHeaderGame">
+
+        <!-- displays the header -->
+        <ImageView style="@style/ImageViewHeaderGame"
+            android:id="@id/img_game_header"/>
+
+        <!-- displays users name -->
+        <TextView style="@style/TextViewNameGame"
+            android:id="@id/vp_start_page_name"/>
+
+        <!-- same Space as in relLayoutProfiles, same purpose of button-alignment -->
+        <Space style="@style/SpaceViewCenterRelLayout"
+            android:id="@id/space_rellayout_center"/>
+
+        <!-- displays users AP -->
+        <TextView style="@style/TextViewAchievementGame"
+            android:id="@id/vp_start_page_achievements"/>
+
+        <!-- displays users Highscore -->
+        <TextView style="@style/TextViewHighscoreGame"
+            android:id="@id/vp_start_page_highscore"/>
+
+    </RelativeLayout>
+
+    <!-- parent of the 2 buttons on the far right side -->
+    <LinearLayout style="@style/LinLayoutMenuButtonsGame">
+
+        <!-- top button -->
+        <Button style="@style/ButtonTopGameBar"
+            android:id="@id/btn_open_menu_top"
+            android:onClick="triggerMenus"/>
+
+        <!-- bottom -->
+        <Button style="@style/ButtonBottomGameBar"
+            android:id="@id/btn_help_menu_top"
+            android:onClick="triggerMenus"/>
+
+    </LinearLayout>
+
+</LinearLayout>

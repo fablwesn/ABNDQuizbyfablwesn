@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- background used for the ImageButtons in the Wizard if a button is not focused -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@color/colorAccent" />
+
+    <stroke
+        android:width="@dimen/small"
+        android:color="@color/colorPrimary" />
+
+    <padding
+        android:bottom="@dimen/small"
+        android:left="@dimen/small"
+        android:right="@dimen/small"
+        android:top="@dimen/small" />
+
+    <corners
+        android:bottomLeftRadius="@dimen/small"
+        android:bottomRightRadius="@dimen/small"
+        android:topLeftRadius="@dimen/small"
+        android:topRightRadius="@dimen/small" />
+</shape>

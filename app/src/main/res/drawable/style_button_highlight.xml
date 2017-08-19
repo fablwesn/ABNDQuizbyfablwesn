@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- background for highlightButtons -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Outline and Filling -->
+    <solid android:color="@color/colorSecondary" />
+
+    <stroke
+        android:width="@dimen/tiny"
+        android:color="@color/colorSecondaryDark" />
+
+    <padding
+        android:bottom="@dimen/small"
+        android:left="@dimen/small"
+        android:right="@dimen/small"
+        android:top="@dimen/small" />
+
+    <corners
+        android:bottomLeftRadius="@dimen/large"
+        android:bottomRightRadius="@dimen/large"
+        android:topLeftRadius="@dimen/large"
+        android:topRightRadius="@dimen/large" />
+</shape>

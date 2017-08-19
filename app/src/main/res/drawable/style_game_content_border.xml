@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- background for regularButtons -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Outline and Filling -->
+    <solid android:color="@color/colorPrimaryLight" />
+
+    <stroke
+        android:width="@dimen/nano"
+        android:color="@color/colorPrimary" />
+
+    <padding
+        android:bottom="@dimen/small"
+        android:left="@dimen/small"
+        android:right="@dimen/small"
+        android:top="@dimen/small" />
+
+    <corners
+        android:bottomLeftRadius="@dimen/medium"
+        android:bottomRightRadius="@dimen/medium"
+        android:topLeftRadius="@dimen/medium"
+        android:topRightRadius="@dimen/medium" />
+</shape>

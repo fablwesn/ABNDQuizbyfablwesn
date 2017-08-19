@@ -1,0 +1,1347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                 customized Base Application Theme
+                                 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+    -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/colorPrimaryLight</item>
+        <item name="android:colorForeground">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">@color/colorTextHeaderDarkPrimary</item>
+        <item name="android:textColorPrimaryInverse">@color/colorTextHeaderLightPrimary</item>
+        <item name="android:textColorSecondary">@color/colorTextHeaderDarkSecondary</item>
+        <item name="android:textColorSecondaryInverse">@color/colorTextHeaderLightSecondary</item>
+        <item name="actionBarStyle">@style/Theme.MyApp.ActionBar</item>
+    </style>
+
+    <!-- customize actionbar -->
+    <style name="Theme.MyApp.ActionBar" parent="style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <!-- remove shadow below action bar -->
+        <item name="android:elevation">0dp</item>
+        <item name="elevation">0dp</item>
+    </style>
+    <!--_________________________________________________________________________________________-->
+
+
+    <!--⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻-->
+    <!--
+                                        Basic Parent-Views
+                                       ⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻
+    -->
+    <!--
+                                          screenLayouts
+    -->
+
+    <!-- all parents of whole pages
+         including
+                   layout_width
+                   layout_height
+    -->
+    <style name="PageLayoutDefault">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <!--
+                                            ImageView
+    -->
+
+    <!-- all Images
+         including
+                   scaleType
+                   layout_gravity
+                   adjustViewBounds
+    -->
+    <style name="ImageViewCustom">
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <!--
+                                            TextViews
+    -->
+
+    <!-- Basics for all Header Text
+         including
+                   maxLines 1
+                   allCaps
+                   textStyle
+                   textSize
+                   textColor
+                   textColorPrimaryInverse
+                   fontFamily
+                   gravity
+    -->
+    <style name="TextViewCustomHeader">
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/headline_default_sp</item>
+        <item name="android:textColor">@color/colorTextHeaderDarkPrimary</item>
+        <item name="android:textColorPrimaryInverse">@color/colorTextHeaderLightPrimary</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Basics for all regular Text
+         including
+                   textSize
+                   textColor
+                   textColorPrimaryInverse
+                   fontFamily
+    -->
+    <style name="TextViewCustomRegular">
+        <item name="android:textSize">@dimen/body_default_sp</item>
+        <item name="android:textColor">@color/colorTextRegularDarkPrimary</item>
+        <item name="android:textColorPrimaryInverse">@color/colorTextRegularLightPrimary</item>
+        <item name="android:fontFamily">casual</item>
+    </style>
+
+    <!-- Basics for all faint Text
+         including
+                   textSize
+                   textColor
+                   textColorPrimaryInverse
+                   textStyle
+                   fontFamily
+    -->
+    <style name="TextViewCustomSecondary">
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textSize">@dimen/faint_default_sp</item>
+        <item name="android:textColor">@color/colorTextFaintDarkPrimary</item>
+        <item name="android:textColorPrimaryInverse">@color/colorTextFaintLightPrimary</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <!-- Basics for all system Text, like buttons, warnings etc.
+         including
+
+                   fontFamily
+    -->
+    <style name="TextViewCustomSystem">
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textSize">@dimen/system_text_default_sp</item>
+        <item name="android:textColor">@color/colorTextHeaderDarkPrimary</item>
+        <item name="android:textColorPrimaryInverse">@color/colorTextHeaderLightPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--
+                                             Buttons
+    -->
+
+    <!-- Basics for all regular Buttons, parent TextViewCustomHeader
+         including
+                   gravity
+                   background
+                   textStyle
+                   fontFamily
+    -->
+    <style name="ButtonCustomRegular" parent="TextViewCustomSystem">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/style_button_regular</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">casual</item>
+    </style>
+
+    <!-- Basics for all Highlight-Buttons, parent TextViewCustomHeader
+         including
+                   gravity
+                   background
+                   textColor
+                   textStyle
+                   fontFamily
+    -->
+    <style name="ButtonCustomHighlight" parent="TextViewCustomSystem">
+        <item name="android:background">@drawable/style_button_highlight</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorTextHeaderDarkSecondary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">casual</item>
+    </style>
+
+    <!-- Basics for all Signal-Buttons, parent TextViewCustomHeader
+         including
+                   gravity
+                   background
+                   textColor
+                   textStyle
+                   fontFamily
+    -->
+    <style name="ButtonCustomSignal" parent="TextViewCustomSystem">
+        <item name="android:background">@drawable/style_button_signal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorTextHeaderDarkSignal</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">casual</item>
+    </style>
+
+    <!--_________________________________________________________________________________________-->
+
+
+    <!--
+        FrameLayout Parent of all views, contains StartScreen, createUserWizard
+        and the quizScreen with the menu
+    -->
+    <style name="MainLayoutABND" parent="PageLayoutDefault"></style>
+
+
+    <!--⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻-->
+    <!--
+                                        1. Start Screen
+                                        ⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻
+    holds the whole startScreen with its contents - vertical orientation [INSIDE Frame Layout] -->
+    <style name="LinLayoutStartScreenMain" parent="PageLayoutDefault">
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/tiny</item>
+        <item name="android:layout_margin">@dimen/tiny</item>
+    </style>
+
+    <!--
+        < ViewPart merged [CONTENTS INSIDE Linear Layout] >
+    -->
+    <!-- HeaderImage displayed. Contains an ImageButton triggering the secret question
+         used in the second Page, the CreateUser Wizard and in the InfoScreen on the gameMenu -->
+    <style name="HeaderImgBtnStartPage" parent="ImageViewCustom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/img_header</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_margin">@dimen/small</item>
+        <item name="android:contentDescription">@string/header_img_content_description</item>
+    </style>
+
+    <style name="TextStartPageHeader" parent="TextViewCustomHeader">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">@dimen/small</item>
+        <item name="android:text">@string/btn_header_txt</item>
+    </style>
+
+    <!--
+        < ViewPart of ViewStub, included [CONTENTS INSIDE Relative Layout] >
+    -->
+    <!-- ProfileTab displayed. A total of 3 are being shown, one for each possible user -->
+    <style name="RelLayoutViewPageProfileTabParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/weight_controlled</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/style_profile_rounded_border_secondary_w_shadow
+        </item>
+        <item name="android:layout_marginTop">@dimen/tiny</item>
+        <item name="android:layout_marginBottom">@dimen/tiny</item>
+        <item name="android:layout_marginStart">@dimen/large</item>
+        <item name="android:layout_marginEnd">@dimen/large</item>
+        <item name="android:padding">@dimen/small</item>
+    </style>
+    <!-- Avatar-ImageView shown, src depends on existence of user profiles -->
+    <style name="AvatarImgStartPage" parent="ImageViewCustom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/style_profile_avatar_rounded_border_tertiary
+        </item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_marginTop">@dimen/tiny</item>
+        <item name="android:layout_marginBottom">@dimen/small</item>
+        <item name="android:layout_marginStart">@dimen/tiny</item>
+        <item name="android:layout_marginEnd">@dimen/tiny</item>
+        <item name="android:contentDescription">@string/avatar_img_start_page_content_description
+        </item>
+    </style>
+    <!-- Name-TextView, empty if no user existing - filled with sharedPrefs value if there is one -->
+    <style name="ProfileTextViewName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">italic|bold</item>
+        <item name="android:layout_toRightOf">@id/start_page_avatar_img</item>
+        <item name="android:layout_above">@id/vp_start_page_achievements</item>
+        <item name="android:layout_margin">@dimen/tiny</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/body_default_sp</item>
+        <item name="android:textColor">@color/colorTextHeaderDarkPrimary</item>
+        <item name="android:textColorPrimaryInverse">@color/colorTextHeaderLightPrimary</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <!-- AchievementPoints-TextView, empty if no user existing - filled with sharedPrefs value if there is one -->
+    <style name="ProfileTextViewAchievementPoints" parent="TextViewCustomSecondary">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_toRightOf">@id/start_page_avatar_img</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_margin">@dimen/tiny</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <!-- Highscore-TextView, empty if no user existing - filled with sharedPrefs value if there is one -->
+    <style name="ProfileTextViewHighscore" parent="TextViewCustomSecondary">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_toRightOf">@id/start_page_avatar_img</item>
+        <item name="android:layout_below">@id/vp_start_page_achievements</item>
+        <item name="android:layout_margin">@dimen/tiny</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <!-- AlarmClock-ImageView, gone if there is already an user existing -->
+    <style name="ClockImgStartPage" parent="ImageViewCustom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentEnd">true</item>
+
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginStart">@dimen/tiny</item>
+        <item name="android:layout_marginEnd">@dimen/medium</item>
+        <item name="android:layout_marginTop">@dimen/large</item>
+        <item name="android:layout_marginBottom">@dimen/large</item>
+        <item name="android:text">@string/btn_create_user</item>
+        <item name="android:src">@drawable/img_alarm_clock</item>
+        <item name="android:contentDescription">@string/clock_img_start_page_content_description
+        </item>
+    </style>
+    <!-- CreateUser-Button, gone if there is already an user existing -->
+    <style name="ButtonStartPageCreate" parent="ButtonCustomHighlight">
+        <item name="android:layout_width">@dimen/btn_create_user_width</item>
+        <item name="android:layout_height">@dimen/btn_create_user_height</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_toLeftOf">@id/start_page_clock_img</item>
+        <item name="android:layout_margin">@dimen/small</item>
+        <item name="android:text">@string/btn_create_user</item>
+    </style>
+    <!-- SpaceWidget used to align the Load- and Delete-Buttons, displayed when a user exists
+         also used for TextAlignment of AP and Highscore on the ActionBarExtension in the GameScreen-->
+    <style name="SpaceViewCenterRelLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <!-- LoadUser-Button, hidden when there is no existing user @ sharedPrefs -->
+    <style name="ButtonStartPageLoad" parent="ButtonCustomRegular">
+        <item name="android:layout_width">@dimen/btn_load_delete_user_width</item>
+        <item name="android:layout_height">@dimen/btn_smallest_allowed</item>
+        <item name="android:layout_above">@id/space_rellayout_center</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_marginBottom">@dimen/tiny</item>
+        <item name="android:layout_marginStart">@dimen/tiny</item>
+        <item name="android:layout_marginEnd">@dimen/medium</item>
+        <item name="android:text">@string/btn_load_user</item>
+    </style>
+    <!-- DeleteUser-Button, hidden when there is no existing user @ sharedPrefs -->
+    <style name="ButtonStartPageDelete" parent="ButtonCustomSignal">
+        <item name="android:layout_width">@dimen/btn_load_delete_user_width</item>
+        <item name="android:layout_height">@dimen/btn_smallest_allowed</item>
+        <item name="android:layout_below">@id/space_rellayout_center</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_marginTop">@dimen/tiny</item>
+        <item name="android:layout_marginStart">@dimen/tiny</item>
+        <item name="android:layout_marginEnd">@dimen/medium</item>
+        <item name="android:layout_marginBottom">@dimen/tiny</item>
+        <item name="android:text">@string/btn_delete_user</item>
+    </style>
+
+    <!--
+        < TextView [INSIDE Linear Layout] >
+    -->
+    <!-- Notice-TextView, displays what to do and informs about userSaves -->
+    <style name="NoticeTextCreateUser" parent="TextViewCustomSecondary">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:text">@string/txt_notice_secondary_start_page</item>
+        <item name="android:layout_margin">@dimen/medium</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--_________________________________________________________________________________________-->
+    <!--
+                                      2.CreateUser Wizard
+                                      ⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻⎻
+     ViewStub containing the whole page, inflated only when user wants to create a profile -->
+    <style name="ViewStubLinLayoutCreateWizard" parent="PageLayoutDefault">
+        <item name="android:layout_margin">@dimen/tiny</item>
+    </style>
+    <!-- holds the whole wizard with its contents, vertical orientation [INSIDE Frame Layout] -->
+    <style name="LinLayoutViewStubWizard" parent="PageLayoutDefault">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/style_screen_round_border_primary_w_shadow</item>
+        <item name="android:paddingTop">@dimen/tiny</item>
+        <item name="android:paddingBottom">@dimen/small</item>
+        <item name="android:paddingStart">@dimen/tiny</item>
+        <item name="android:paddingEnd">@dimen/tiny</item>
+        <item name="android:padding">@dimen/small</item>
+    </style>
+    <!--
+        < ViewPart merged [CONTENTS INSIDE Linear Layout] >
+    -->
+    <!-- HeaderImage displayed. see "1. StartScreen" above for style-items and info -->
+
+    <!--
+        < TextView [INSIDE Linear Layout] >
+     -->
+    <!-- Body-Text displaying the narrator's text throughout all 3 subPages-->
+    <style name="CreateUserWizardBodyText" parent="TextViewCustomRegular">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/weight_controlled</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">@dimen/medium</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--
+        < EditText (only visible on first subPage) [INSIDE Linear Layout] >
+     -->
+    <!-- EnterName-EditText for user Input - will be stored to sharedPrefs if the wizard finishes -->
+    <style name="NameEditTextCreateUser">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLength">8</item>
+        <item name="android:ellipsize">middle</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:inputType">text</item>
+        <item name="android:ems">10</item>
+        <item name="android:hint">@string/hint_enter_name_create_user</item>
+        <item name="android:layout_marginTop">@dimen/tiny</item>
+        <item name="android:layout_marginBottom">@dimen/medium</item>
+        <item name="android:layout_marginStart">@dimen/small</item>
+        <item name="android:layout_marginEnd">@dimen/small</item>
+        <item name="android:background">@drawable/style_button_regular</item>
+    </style>
+
+    <!--
+        < Spinner (only visible on second subPage) [INSIDE Linear Layout] >
+     -->
+    <!-- selectGender-Spinner for user Input - stored to sharedPrefs if the wizard finishes -->
+    <style name="SelectGenderSpinner">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/style_button_regular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">@dimen/large</item>
+    </style>
+
+    <!--
+        < GridLayout (only visible on third subPage) [INSIDE Linear Layout] >
+     -->
+    <!-- hold all the ImageButtons for the user to choose his future avatar from, sources depend
+         on genderSpinner Input - stored to sharedPrefs if the wizard finishes. 3x2 Grid -->
+    <style name="GriLayoutChoseAvatarWizard">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/weight_controlled</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:rowCount">2</item>
+        <item name="android:columnCount">3</item>
+        <item name="android:background">@drawable/style_rounded_border_dark_primary_w_shadow</item>
+        <item name="android:layout_marginEnd">@dimen/xlarge</item>
+        <item name="android:layout_marginStart">@dimen/xlarge</item>
+        <item name="android:layout_marginTop">@dimen/tiny</item>
+        <item name="android:layout_marginBottom">@dimen/tiny</item>
+    </style>
+
+    <!--
+        < ImageButtons (only visible on third subPage) [INSIDE Grid Layout] >
+     -->
+    <!-- 6 in total. set to have all the same size and align proportionally inside -->
+    <!-- Parent view, margins defined separately-->
+    <style name="AvatarImgButtonParent">
+        <item name="android:layout_width">@dimen/weight_controlled</item>
+        <item name="android:layout_height">@dimen/weight_controlled</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:background">@drawable/selector_focus_primary_secondary</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:contentDescription">@string/avatar_img_content_description</item>
+    </style>
+    <!-- Option to chose: Avatar 01 -->
+    <style name="Avatar01ImgBtn" parent="AvatarImgButtonParent">
+        <item name="android:layout_marginTop">@dimen/small</item>
+        <item name="android:layout_marginBottom">@dimen/tiny</item>
+        <item name="android:layout_marginStart">@dimen/small</item>
+        <item name="android:layout_marginEnd">@dimen/tiny</item>
+    </style>
+    <!-- Option to chose: Avatar 02 -->
+    <style name="Avatar02ImgBtn" parent="AvatarImgButtonParent">
+        <item name="android:layout_width">@dimen/weight_controlled</item>
+        <item name="android:layout_height">@dimen/weight_controlled</item>
+        <item name="android:layout_marginTop">@dimen/small</item>
+        <item name="android:layout_marginBottom">@dimen/tiny</item>
+        <item name="android:layout_marginStart">@dimen/tiny</item>
+        <item name="android:layout_marginEnd">@dimen/tiny</item>
+    </style>
+    <!-- Option to chose: Avatar 03 -->
+    <style name="Avatar03ImgBtn" parent="AvatarImgButtonParent">
+        <item name="android:layout_width">@dimen/weight_controlled</item>
+        <item name="android:layout_height">@dimen/weight_controlled</item>
+        <item name="android:layout_marginTop">@dimen/small</item>
+        <item name="android:layout_marginBottom">@dimen/tiny</item>
+        <item name="android:layout_marginStart">@dimen/tiny</item>
+        <item name="android:layout_marginEnd">@dimen/small</item>
+    </style>
+    <!-- Option to chose: Avatar 04 -->
+    <style name="Avatar04ImgBtn" parent="AvatarImgButtonParent">
+        <item name="android:layout_width">@dimen/weight_controlled</item>
+        <item name="android:layout_height">@dimen/weight_controlled</item>
+        <item name="android:layout_marginTop">@dimen/tiny</item>
+        <item name="android:layout_marginBottom">@dimen/small</item>
+        <item name="android:layout_marginStart">@dimen/small</item>
+        <item name="android:layout_marginEnd">@dimen/tiny</item>
+    </style>
+    <!-- Option to chose: Avatar 05 -->
+    <style name="Avatar05ImgBtn" parent="AvatarImgButtonParent">
+        <item name="android:layout_width">@dimen/weight_controlled</item>
+        <item name="android:layout_height">@dimen/weight_controlled</item>
+        <item name="android:layout_marginTop">@dimen/tiny</item>
+        <item name="android:layout_marginBottom">@dimen/small</item>
+        <item name="android:layout_marginStart">@dimen/tiny</item>
+        <item name="android:layout_marginEnd">@dimen/tiny</item>
+    </style>
+    <!-- Option to chose: Avatar 06 -->
+    <style name="Avatar06ImgBtn" parent="AvatarImgButtonParent">
+        <item name="android:layout_width">@dimen/weight_controlled</item>
+        <item name="android:layout_height">@dimen/weight_controlled</item>
+        <item name="android:layout_marginTop">@dimen/tiny</item>
+        <item name="android:layout_marginBottom">@dimen/small</item>
+        <item name="android:layout_marginStart">@dimen/tiny</item>
+        <item name="android:layout_marginEnd">@dimen/small</item>
+    </style>
+
+    <!--
+        < ViewPart included [CONTENTS INSIDE Linear Layout, horizontal] >
+    -->
+    <!-- displays the previous, next and cancel Buttons throughout the wizard -->
+    <!-- ParentView, horizontal Layout-->
+    <style name="LinLayoutViewPartButtonsWizard">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">@dimen/tiny</item>
+    </style>
+    <!-- 2 SpaceWidgets enclosing the buttons for better optics -->
+    <style name="SpaceViewPartWizardButtons">
+        <item name="android:layout_height">@dimen/btn_smallest_allowed</item>
+        <item name="android:layout_width">@dimen/weight_controlled</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <!-- PreviousButton -->
+    <style name="ButtonBackWizard" parent="ButtonCustomHighlight">
+        <item name="android:layout_width">@dimen/btn_load_delete_user_width</item>
+        <item name="android:layout_height">@dimen/btn_load_delete_user_height</item>
+        <item name="android:text">@string/btn_back</item>
+        <item name="android:layout_marginEnd">@dimen/medium</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <!-- NextButton, text defined programmatically (changes on third subPage) -->
+    <style name="ButtonNextWizard" parent="ButtonCustomHighlight">
+        <item name="android:layout_width">@dimen/btn_load_delete_user_width</item>
+        <item name="android:layout_height">@dimen/btn_load_delete_user_height</item>
+        <item name="android:layout_marginStart">@dimen/medium</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <!-- CancelButton -->
+    <style name="ButtonCancelWizard" parent="ButtonCustomSignal">
+        <item name="android:layout_width">@dimen/btn_smallest_allowed</item>
+        <item name="android:layout_height">@dimen/btn_smallest_allowed</item>
+        <item name="android:text">@string/btn_cancel_wizard</item>
+        <item name="android:layout_margin">@dimen/small</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!--
+        < ImageView [INSIDE Linear Layout] >
+    -->
+    <!-- displays an image on the bottom for decoration, src depends on subPage -->
+    <style name="ImageViewFooterWizard" parent="ImageViewCustom">
+        <item name="android:layout_width">@dimen/img_footer_wizard_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/tiny</item>
+        <item name="android:layout_marginBottom">@dimen/small</item>
+        <item name="android:layout_marginStart">@dimen/tiny</item>
+        <item name="android:layout_marginEnd">@dimen/tiny</item>
+        <item name="android:contentDescription">@string/footer_img_wizard_content_description</item>
+    </style>
+
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                       3.Game Page
+                                       ¯¯¯¯¯¯¯¯¯¯¯
+    -->
+    <!-- Pre-Inflate -->
+    <style name="ViewStubLinLayoutGameScreen" parent="PageLayoutDefault"></style>
+    <!-- Post-Inflate -->
+    <style name="LinLayoutGameScreenParent" parent="PageLayoutDefault">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!--
+        < ViewPart included  [CONTENTS INSIDE Linear Layout, horizontal] >
+    -->
+    <!-- parent of the top bar containing the chosen Avatar, HeaderImg and 2 Buttons, melts in with actionBar -->
+    <style name="LinLayoutViewPartUserBarGame">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+    <!-- ImageButton shown on top left, contains userAvatar and lets you chose another one instead -->
+    <style name="ImageButtonAvatarGameBar">
+        <item name="android:background">@drawable/style_avatar_game_screen</item>
+        <item name="android:layout_width">@dimen/img_avatar_game_width</item>
+        <item name="android:layout_height">@dimen/img_avatar_game_height</item>
+        <item name="android:src">@drawable/img_avatar_male01</item>
+        <item name="android:layout_margin">@dimen/medium</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <!--
+        Relative Layout & Contents - storing the header and TextViews displaying current AP and Highscore
+     -->
+    <style name="RelLayoutViewPageHeaderGame">
+        <item name="android:layout_width">@dimen/weight_controlled</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <!-- Header-ImageView in the middle -->
+    <style name="ImageViewHeaderGame" parent="ImageViewCustom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:src">@drawable/img_menu_top_game_header</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginTop">@dimen/tiny</item>
+    </style>
+    <!-- displays current users name, from sharedPrefs-->
+    <style name="TextViewNameGame">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_below">@id/img_game_header</item>
+        <item name="android:layout_marginBottom">@dimen/small</item>
+        <item name="android:layout_marginStart">@dimen/small</item>
+        <item name="android:layout_marginEnd">@dimen/small</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/headline_default_sp</item>
+        <item name="android:textColor">@color/colorTextHeaderDarkPrimary</item>
+        <item name="android:textColorPrimaryInverse">@color/colorTextHeaderLightPrimary</item>
+        <item name="android:fontFamily">casual</item>
+    </style>
+    <!-- displays current users AP, from sharedPrefs-->
+    <style name="TextViewAchievementGame" parent="TextViewCustomSecondary">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_below">@id/vp_start_page_name</item>
+        <item name="android:layout_margin">@dimen/small</item>
+        <item name="android:drawableStart">@drawable/img_icon_ap</item>
+        <item name="android:layout_toStartOf">@id/space_rellayout_center</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/colorTextRegularDarkPrimary</item>
+        <item name="android:drawablePadding">@dimen/tiny</item>
+    </style>
+    <!-- displays current users highscore, from sharedPrefs-->
+    <style name="TextViewHighscoreGame" parent="TextViewCustomSecondary">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_below">@id/vp_start_page_name</item>
+        <item name="android:layout_margin">@dimen/small</item>
+        <item name="android:drawableStart">@drawable/img_icon_highscore</item>
+        <item name="android:layout_toEndOf">@id/space_rellayout_center</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/colorTextRegularDarkPrimary</item>
+        <item name="android:drawablePadding">@dimen/tiny</item>
+    </style>
+
+    <!-- vertical LinearLayout containing two buttons, one for info/help and one to open the menu -->
+    <style name="LinLayoutMenuButtonsGame">
+        <item name="android:layout_width">@dimen/user_bar_outer_width</item>
+        <item name="android:layout_height">@dimen/user_bar_outer_height</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_margin">@dimen/medium</item>
+    </style>
+    <!-- Top-button on the left edge -->
+    <style name="ButtonTopGameBar" parent="ButtonCustomRegular">
+        <item name="android:layout_width">@dimen/user_bar_outer_width</item>
+        <item name="android:layout_height">@dimen/btn_menu_game_height</item>
+        <item name="android:layout_marginBottom">@dimen/tiny</item>
+        <item name="android:text">@string/btn_menu_game</item>
+    </style>
+    <!-- Bottom-button on the left edge -->
+    <style name="ButtonBottomGameBar" parent="ButtonCustomRegular">
+        <item name="android:layout_width">@dimen/user_bar_outer_width</item>
+        <item name="android:layout_height">@dimen/btn_menu_game_height</item>
+        <item name="android:layout_marginTop">@dimen/tiny</item>
+        <item name="android:text">@string/btn_info_help_game</item>
+    </style>
+
+    <!--
+       < View [INSIDE Linear Layout] >
+    -->
+    <!-- draws a dark border to separate the top bar with the actual gameScreen
+        used on top -->
+    <style name="ViewDarkSeparatorLineGameTop">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/tiny</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:layout_marginBottom">@dimen/small</item>
+    </style>
+
+    <!--
+       < TextView [INSIDE Linear Layout] >
+    -->
+    <!-- Header Text, contains info about the current page -->
+    <style name="TextViewTitleHeaderGame" parent="TextViewCustomHeader">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--
+       < ImageView [INSIDE Linear Layout] >
+    -->
+    <!-- contains the professor header with all of his emotional outbreaks. leave focusable to take focus from buttons -->
+    <style name="ImageViewProfessorHeaderGame" parent="ImageViewCustom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/weight_controlled</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginStart">@dimen/tiny</item>
+        <item name="android:layout_marginEnd">@dimen/tiny</item>
+    </style>
+
+    <!--
+        Relative Layout & Contents - smaller frame, storing the all view contents when there is no question asked [INSIDE Linear Layout]
+     -->
+    <!-- the Parent Layout -->
+    <style name="RelLayoutMenuFrameGame">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/weight_controlled</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:background">@drawable/style_screen_round_border_primary_w_shadow</item>
+        <item name="android:layout_marginStart">@dimen/large</item>
+        <item name="android:layout_marginEnd">@dimen/large</item>
+    </style>
+    <!-- BodyText filling the frame -->
+    <style name="TextViewMenuMainGame" parent="TextViewCustomRegular">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">@dimen/medium</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- ScrollView of the HelpPage -->
+    <style name="ScrollViewHelpWindowGame">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">@dimen/medium</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <!-- TextView displaying the explanation, inside ScrollView-->
+    <style name="TextHelpMenuMain" parent="TextViewCustomRegular">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/tutorial_game_help_page</item>
+    </style>
+    <!--
+        the four selectCategoryButtons -->
+    <!-- A -->
+    <style name="ImgButtonCategoryA" parent="ImageViewCustom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/selector_focus_primary_secondary</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:src">@drawable/img_category_animals</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_toStartOf">@id/space_rellayout_center</item>
+        <item name="android:layout_above">@id/space_rellayout_center</item>
+        <item name="android:layout_marginTop">@dimen/medium</item>
+        <item name="android:layout_marginBottom">@dimen/nano</item>
+        <item name="android:layout_marginStart">@dimen/medium</item>
+        <item name="android:layout_marginEnd">@dimen/nano</item>
+    </style>
+    <!-- B -->
+    <style name="ImgButtonCategoryB" parent="ImageViewCustom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/selector_focus_primary_secondary</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:src">@drawable/img_category_books</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_toEndOf">@id/space_rellayout_center</item>
+        <item name="android:layout_above">@id/space_rellayout_center</item>
+        <item name="android:layout_marginTop">@dimen/medium</item>
+        <item name="android:layout_marginBottom">@dimen/nano</item>
+        <item name="android:layout_marginStart">@dimen/nano</item>
+        <item name="android:layout_marginEnd">@dimen/medium</item>
+    </style>
+    <!-- N -->
+    <style name="ImgButtonCategoryN" parent="ImageViewCustom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/selector_focus_primary_secondary</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:src">@drawable/img_category_netflix</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_toStartOf">@id/space_rellayout_center</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_below">@id/space_rellayout_center</item>
+        <item name="android:layout_marginTop">@dimen/nano</item>
+        <item name="android:layout_marginBottom">@dimen/medium</item>
+        <item name="android:layout_marginStart">@dimen/medium</item>
+        <item name="android:layout_marginEnd">@dimen/nano</item>
+    </style>
+    <!-- D -->
+    <style name="ImgButtonCategoryD" parent="ImageViewCustom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/selector_focus_primary_secondary</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:src">@drawable/img_category_digital_world</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_toEndOf">@id/space_rellayout_center</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_below">@id/space_rellayout_center</item>
+        <item name="android:layout_marginTop">@dimen/nano</item>
+        <item name="android:layout_marginBottom">@dimen/medium</item>
+        <item name="android:layout_marginStart">@dimen/nano</item>
+        <item name="android:layout_marginEnd">@dimen/medium</item>
+    </style>
+    <!--
+        ScoreValue Buttons -->
+    <!-- Low Value -->
+    <style name="ButtonScoreValueLow" parent="ButtonCustomRegular">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:background">@drawable/selector_focus_primary_secondary</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_above">@id/space_rellayout_center</item>
+        <item name="android:text">@string/btn_score_low_game</item>
+        <item name="android:textSize">@dimen/btn_txt_big_game_screen_sp</item>
+        <item name="android:layout_marginTop">@dimen/small</item>
+        <item name="android:layout_marginBottom">@dimen/nano</item>
+        <item name="android:layout_marginStart">@dimen/small</item>
+        <item name="android:layout_marginEnd">@dimen/small</item>
+    </style>
+    <!-- High Value -->
+    <style name="ButtonScoreValueHigh" parent="ButtonCustomRegular">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:background">@drawable/selector_focus_primary_secondary</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_below">@id/space_rellayout_center</item>
+        <item name="android:text">@string/btn_score_high_game</item>
+        <item name="android:textSize">@dimen/btn_txt_big_game_screen_sp</item>
+        <item name="android:layout_marginTop">@dimen/nano</item>
+        <item name="android:layout_marginBottom">@dimen/small</item>
+        <item name="android:layout_marginStart">@dimen/small</item>
+        <item name="android:layout_marginEnd">@dimen/small</item>
+    </style>
+
+    <!-- Text counting down till the question is asked -->
+    <style name="TextViewShortCountdownGame" parent="TextViewCustomRegular">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorSignalDark</item>
+        <item name="android:layout_margin">@dimen/small</item>
+        <item name="android:textSize">@dimen/btn_txt_big_game_screen_sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- ImageView used as the backgroundImage while the shortCountdown runs -->
+    <style name="ImageViewShortCountdownBackground" parent="ImageViewCustom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/img_ready_bg</item>
+        <item name="android:layout_below">@id/game_screen_short_countdown_text</item>
+    </style>
+
+    <!--
+      Menu Buttons -->
+    <!-- Statistics -->
+    <style name="ButtonStatisticsMenu" parent="ButtonCustomRegular">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/btn_smallest_allowed</item>
+        <item name="android:layout_above">@id/btn_feedback_menu</item>
+        <item name="android:layout_marginTop">@dimen/small</item>
+        <item name="android:layout_marginBottom">@dimen/small</item>
+        <item name="android:layout_marginStart">@dimen/xlarge</item>
+        <item name="android:layout_marginEnd">@dimen/xlarge</item>
+        <item name="android:text">@string/btn_statistics_menu</item>
+    </style>
+    <!-- Options -->
+    <style name="ButtonFeedbackMenu" parent="ButtonCustomRegular">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/btn_smallest_allowed</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginTop">@dimen/small</item>
+        <item name="android:layout_marginBottom">@dimen/small</item>
+        <item name="android:layout_marginStart">@dimen/xlarge</item>
+        <item name="android:layout_marginEnd">@dimen/xlarge</item>
+        <item name="android:text">@string/btn_feedback_menu</item>
+    </style>
+    <!-- Quit -->
+    <style name="ButtonQuitGameMenu" parent="ButtonCustomSignal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/btn_smallest_allowed</item>
+        <item name="android:layout_below">@id/btn_feedback_menu</item>
+        <item name="android:layout_marginTop">@dimen/small</item>
+        <item name="android:layout_marginBottom">@dimen/small</item>
+        <item name="android:layout_marginStart">@dimen/xlarge</item>
+        <item name="android:layout_marginEnd">@dimen/xlarge</item>
+        <item name="android:text">@string/btn_quit_game</item>
+    </style>
+
+    <!-- CheatMode Question Text and TextEdit -->
+    <!-- Text -->
+    <style name="TextCheatQuestion" parent="TextViewCustomRegular">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_margin">@dimen/large</item>
+        <item name="android:text">@string/question_cheat</item>
+    </style>
+
+    <style name="TextEditCheatAnswer" parent="TextViewCustomRegular">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/faint_default_sp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@id/cheat_code_text_question</item>
+        <item name="android:background">@drawable/style_button_regular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/medium</item>
+        <item name="android:layout_marginBottom">@dimen/small</item>
+        <item name="android:layout_marginStart">@dimen/xlarge</item>
+        <item name="android:layout_marginEnd">@dimen/xlarge</item>
+        <item name="android:hint">@string/hint_cheat</item>
+        <item name="android:maxLength">7</item>
+        <item name="android:ellipsize">middle</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:inputType">text</item>
+        <item name="android:ems">10</item>
+    </style>
+    <!-- TextEdit -->
+
+    <!--
+        Linear Layout & Contents - holds the CountDownProgressbar and -TimeText [INSIDE Linear Layout]
+     -->
+    <!-- Parent -->
+    <style name="LinLayoutTimeToAnswer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!-- Time left to answer TextView -->
+    <style name="TextTimeLeftToAnswer" parent="TextViewCustomSecondary">
+        <item name="android:layout_width">@dimen/medium</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/small</item>
+        <item name="android:layout_marginStart">@dimen/small</item>
+    </style>
+
+    <!--
+        TextView
+     -->
+    <!-- current UserPointsText -->
+    <style name="TextCurrentUserPoints" parent="TextViewCustomHeader">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/style_score_gamescreen_tertiary</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:text">0</item>
+        <item name="android:textColor">@color/colorTextTertiaryDark</item>
+        <item name="android:layout_margin">@dimen/small</item>
+        <item name="android:textSize">@dimen/subheading_default_sp</item>
+    </style>
+
+    <!--
+        TextView
+     -->
+    <!-- Question Text -->
+    <style name="TextQuestionAsked" parent="TextViewCustomRegular">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/weight_controlled</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/style_button_regular</item>
+        <item name="android:textSize">@dimen/subheading_default_sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">@dimen/tiny</item>
+        <item name="android:layout_marginEnd">@dimen/medium</item>
+        <item name="android:layout_marginStart">@dimen/medium</item>
+    </style>
+
+    <!--
+        Relative Layout & Contents - contains all the RadioButtons needed for answering [INSIDE Linear Layout]
+     -->
+    <!-- Parent -->
+    <style name="RelLayoutRadioButtonParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/weight_controlled</item>
+        <item name="android:layout_weight">1.2</item>
+        <item name="android:background">@drawable/style_button_regular</item>
+        <item name="android:layout_margin">@dimen/nano</item>
+    </style>
+    <!-- Parent of all RadioButtons -->
+    <style name="RadioButtonsParent" parent="TextViewCustomRegular">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/style_game_content_border</item>
+        <item name="android:layout_margin">@dimen/tiny</item>
+        <item name="android:buttonTint">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/faint_default_sp</item>
+    </style>
+    <!-- single radioButtons -->
+    <style name="RadioButton01" parent="RadioButtonsParent">
+        <item name="android:layout_above">@id/space_radio_buttons</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_toStartOf">@id/space_radio_buttons</item>
+    </style>
+
+    <style name="RadioButton02" parent="RadioButtonsParent">
+        <item name="android:layout_above">@id/space_radio_buttons</item>
+        <item name="android:layout_toEndOf">@id/space_radio_buttons</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+    <style name="RadioButton03" parent="RadioButtonsParent">
+        <item name="android:layout_below">@id/space_radio_buttons</item>
+        <item name="android:layout_toStartOf">@id/space_radio_buttons</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+
+    </style>
+
+    <style name="RadioButton04" parent="RadioButtonsParent">
+        <item name="android:layout_below">@id/space_radio_buttons</item>
+        <item name="android:layout_toEndOf">@id/space_radio_buttons</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+
+    <!--
+        Relative Layout & Contents - contains all the CheckBoxes needed for answering [INSIDE Linear Layout]
+     -->
+    <!-- Parent -->
+    <style name="RelLayoutCheckBoxParent" parent="RelLayoutRadioButtonParent"></style>
+    <!-- Parent of all CheckBoxes -->
+    <style name="CheckBoxParent" parent="TextViewCustomRegular">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/style_game_content_border</item>
+        <item name="android:layout_margin">@dimen/nano</item>
+        <item name="android:buttonTint">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/faint_default_sp</item>
+    </style>
+    <!-- single checkBoxes -->
+    <style name="CheckBox01" parent="CheckBoxParent">
+        <item name="android:layout_above">@id/space_check_boxes</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_toStartOf">@id/space_check_boxes</item>
+    </style>
+
+    <style name="CheckBox02" parent="CheckBoxParent">
+        <item name="android:layout_above">@id/space_check_boxes</item>
+        <item name="android:layout_toEndOf">@id/space_check_boxes</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+    <style name="CheckBox03" parent="CheckBoxParent">
+        <item name="android:layout_below">@id/space_check_boxes</item>
+        <item name="android:layout_toStartOf">@id/space_check_boxes</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+
+    </style>
+
+    <style name="CheckBox04" parent="CheckBoxParent">
+        <item name="android:layout_below">@id/space_check_boxes</item>
+        <item name="android:layout_toEndOf">@id/space_check_boxes</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+
+    <!--
+       < View [INSIDE Linear Layout] >
+    -->
+    <!-- draws a dark border to separate the bottom bar with the actual gameScreen
+         used below -->
+    <style name="ViewDarkSeparatorLineGameBottom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/tiny</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:layout_marginTop">@dimen/small</item>
+    </style>
+
+    <!--
+       < RelativeLayout BottomButtonBar [INSIDE Linear Layout] >
+    -->
+    <!-- parent holding the bottom button bar -->
+    <style name="RelLayoutBottomButtonsGame">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/weight_controlled</item>
+        <item name="android:layout_weight">0.7</item>
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+    <!-- ImageButton on left, timeJoker -->
+    <style name="ImageBtnTimeJokerGame">
+        <item name="android:layout_width">@dimen/btn_joker_game</item>
+        <item name="android:layout_height">@dimen/btn_joker_game</item>
+        <item name="android:background">@drawable/style_button_joker</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_toStartOf">@id/btn_user_input_game_screen</item>>
+        <item name="android:src">@drawable/img_time_joker</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_marginTop">@dimen/small</item>
+        <item name="android:layout_marginBottom">@dimen/medium</item>
+        <item name="android:layout_marginStart">@dimen/small</item>
+        <item name="android:layout_marginEnd">@dimen/large</item>
+    </style>
+    <!-- SubmitAnswer-Button in the middle -->
+    <style name="ButtonSubmitAnswerGame" parent="ButtonCustomHighlight">
+        <item name="android:layout_width">@dimen/btn_submit_answer_game_width</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_margin">@dimen/small</item>
+        <item name="android:textSize">@dimen/btn_txt_big_game_screen_sp</item>
+    </style>
+    <!-- ImageButton on the right, fiftyFiftyJoker -->
+    <style name="ImageBtnChanceJokerGame">
+        <item name="android:layout_width">@dimen/btn_joker_game</item>
+        <item name="android:layout_height">@dimen/btn_joker_game</item>
+        <item name="android:background">@drawable/style_button_joker</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_toEndOf">@id/btn_user_input_game_screen</item>>
+        <item name="android:src">@drawable/img_fiftyfifty_joker</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_marginTop">@dimen/small</item>
+        <item name="android:layout_marginBottom">@dimen/medium</item>
+        <item name="android:layout_marginStart">@dimen/large</item>
+        <item name="android:layout_marginEnd">@dimen/small</item>
+    </style>
+
+
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                         4.Menu
+                                         ¯¯¯¯¯¯
+    -->
+    <!-- StatisticsMenu and FeedbackMenu Parent, LinearLayout -->
+    <style name="LinLayBigMenuParentsGame">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/weight_controlled</item>
+        <item name="android:layout_weight">2.9</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/style_screen_round_border_primary_w_shadow</item>
+        <item name="android:layout_marginTop">@dimen/small</item>
+        <item name="android:layout_marginBottom">@dimen/medium</item>
+        <item name="android:layout_marginStart">@dimen/medium</item>
+        <item name="android:layout_marginEnd">@dimen/medium</item>
+    </style>
+    <!--
+      < LinearLayout StatisticsMenu Page [INSIDE Linear Layout] >
+    -->
+    <!-- Category Tab-ImageButtons -->
+    <!-- parent style -->
+    <style name="ImgBtnCategoryStatisticsParent" parent="ImageViewCustom">
+        <item name="android:layout_width">@dimen/weight_controlled</item>
+        <item name="android:layout_height">@dimen/btn_smallest_allowed</item>
+        <item name="android:background">@drawable/style_button_regular</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">@dimen/small</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+    <!-- category's -->
+    <style name="ImgBtnCategoryGeneralStatistics" parent="ImgBtnCategoryStatisticsParent">
+        <item name="android:src">@drawable/img_tab_btn_general</item>
+    </style>
+
+    <style name="ImgBtnCategoryAnimalsStatistics" parent="ImgBtnCategoryStatisticsParent">
+        <item name="android:src">@drawable/img_tab_btn_animals</item>
+    </style>
+
+    <style name="ImgBtnCategoryBooksStatistics" parent="ImgBtnCategoryStatisticsParent">
+        <item name="android:src">@drawable/img_tab_btn_books</item>
+    </style>
+
+    <style name="ImgBtnCategoryNetflixStatistics" parent="ImgBtnCategoryStatisticsParent">
+        <item name="android:src">@drawable/img_tab_btn_netflix</item>
+    </style>
+
+    <style name="ImgBtnCategoryDigitalStatistics" parent="ImgBtnCategoryStatisticsParent">
+        <item name="android:src">@drawable/img_tab_btn_digital</item>
+    </style>
+    <!-- Thick separator line -->
+    <style name="ViewSeparatorThickStatistics">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/tiny</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:layout_marginBottom">@dimen/small</item>
+    </style>
+    <!-- Title Text -->
+    <style name="TxtStatisticsTitle" parent="TextViewCustomHeader">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/subheading_default_sp</item>
+    </style>
+    <!-- General Statistics Text -->
+    <style name="TxtStatisticsGeneralMain">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">start</item>
+        <item name="android:text">@string/main_statistics_general</item>
+        <item name="android:layout_marginStart">@dimen/xlarge</item>
+        <item name="android:layout_marginEnd">@dimen/xlarge</item>
+        <item name="android:layout_marginBottom">@dimen/small</item>
+    </style>
+    <!-- Secondary View-Separator -->
+    <style name="ViewSeparatorSecondary">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/nano</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:layout_marginBottom">@dimen/medium</item>
+        <item name="android:layout_marginStart">@dimen/large</item>
+        <item name="android:layout_marginEnd">@dimen/large</item>
+    </style>
+    <!-- Statistics SubTexts -->
+    <style name="TxtStatisticsSub">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginEnd">@dimen/large</item>
+        <item name="android:layout_marginStart">@dimen/large</item>
+    </style>
+
+    <!-- LinearLayout containing 3 TextViews, one each for rightCount, wrongCount timeOutCount-->
+    <style name="LinLayStatisticsParentRWTO">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">@dimen/medium</item>
+        <item name="android:layout_marginBottom">@dimen/large</item>
+        <item name="android:layout_marginStart">@dimen/large</item>
+        <item name="android:layout_marginEnd">@dimen/large</item>
+    </style>
+    <!-- Count-TextView parent -->
+    <style name="TxtStatisticsCountParent">
+        <item name="android:layout_width">@dimen/weight_controlled</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- right Txt with drawableTop # -->
+    <style name="TxtStatisticsRightCount" parent="TxtStatisticsCountParent">
+        <item name="android:drawableTop">@drawable/img_icon_right</item>
+    </style>
+    <!-- wrong Txt with drawableTop # -->
+    <style name="TxtStatisticsWrongCount" parent="TxtStatisticsCountParent">
+        <item name="android:drawableTop">@drawable/img_icon_wrong</item>
+    </style>
+    <!-- timeOut Txt with drawableTop # -->
+    <style name="TxtStatisticsTimeOutCount" parent="TxtStatisticsCountParent">
+        <item name="android:drawableTop">@drawable/img_icon_time_out</item>
+    </style>
+
+    <!--
+       < LinearLayout FeedbackMenu Page [INSIDE Linear Layout] >
+    -->
+    <!-- Body Text -->
+    <style name="TextViewFeedbackMenuMain" parent="TextViewCustomRegular">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/weight_controlled</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:text">@string/feedback_menu_body_text</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">@dimen/small</item>
+    </style>
+    <!-- the 3 different Buttons inside -->
+    <!-- Common Parent -->
+    <style name="FeedbackButtonParent" parent="ButtonCustomRegular">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/btn_menu_game_height</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginStart">@dimen/large</item>
+        <item name="android:layout_marginEnd">@dimen/large</item>
+    </style>
+    <!-- Report Bug Btn -->
+    <style name="BtnBugReport" parent="FeedbackButtonParent">
+        <item name="android:layout_marginTop">@dimen/small</item>
+        <item name="android:layout_marginBottom">@dimen/nano</item>
+        <item name="android:text">@string/btn_feedback_bug</item>
+    </style>
+    <!-- Suggestion Btn -->
+    <style name="BtnSendSuggestion" parent="FeedbackButtonParent">
+        <item name="android:layout_marginTop">@dimen/nano</item>
+        <item name="android:layout_marginBottom">@dimen/nano</item>
+        <item name="android:text">@string/btn_send_suggestion</item>
+    </style>
+    <!-- Send Money Btn -->
+    <style name="BtnDonateMoney" parent="FeedbackButtonParent">
+        <item name="android:layout_marginTop">@dimen/nano</item>
+        <item name="android:layout_marginBottom">@dimen/medium</item>
+        <item name="android:text">@string/btn_donate_money</item>
+    </style>
+
+    <!--_________________________________________________________________________________________-->
+</resources>

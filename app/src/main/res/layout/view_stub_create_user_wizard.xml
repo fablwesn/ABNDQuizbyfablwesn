@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- contains everything needed to create a new user -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinLayoutViewStubWizard">
+
+    <!-- header (with "TextButton") -->
+    <include layout="@layout/view_part_header_merge" />
+
+    <!-- Narrator BodyText -->
+    <TextView style="@style/CreateUserWizardBodyText"
+        android:id="@id/wizard_body_text"/>
+
+    <!-- User Input for the name -->
+    <EditText style="@style/NameEditTextCreateUser"
+        android:id="@id/vs_create_user_name_edtxt"/>
+
+    <!-- User Input for gender -->
+    <Spinner style="@style/SelectGenderSpinner"
+        android:id="@id/wizard_gender_spinner"
+        android:visibility="gone"/>
+
+    <!-- User Input for the avatar img -->
+    <GridLayout
+        style="@style/GriLayoutChoseAvatarWizard"
+        android:id="@id/wizard_avatar_grid_parent"
+        android:visibility="gone">
+
+        <ImageButton style="@style/Avatar01ImgBtn"
+            android:id="@id/imgbtn_select_avatar_one"/>
+        <ImageButton style="@style/Avatar02ImgBtn"
+            android:id="@id/imgbtn_select_avatar_two"/>
+        <ImageButton style="@style/Avatar03ImgBtn"
+            android:id="@id/imgbtn_select_avatar_three"/>
+        <ImageButton style="@style/Avatar04ImgBtn"
+            android:id="@id/imgbtn_select_avatar_four"/>
+        <ImageButton style="@style/Avatar05ImgBtn"
+            android:id="@id/imgbtn_select_avatar_five"/>
+        <ImageButton style="@style/Avatar06ImgBtn"
+            android:id="@id/imgbtn_select_avatar_six"/>
+
+    </GridLayout>
+
+    <!-- Buttons for navigating through the wizard -->
+    <include layout="@layout/view_part_buttons_wizard_lin_layout"/>
+
+    <!-- Footer Image -->
+    <ImageView style="@style/ImageViewFooterWizard"
+        android:id="@id/wizard_footer_img"/>
+
+</LinearLayout>

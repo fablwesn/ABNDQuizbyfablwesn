@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- contains all the questions
+
+    it's possible to add more questions just through adding more strings
+
+    to add a question you need 5 strings in total and the order is important, for the first two!
+    add into the appropriate category as an item, each string separated with ":"
+     1 = question text
+     2 = right answer
+     3, 4, 5 = wrong answer possibilities -->
+<resources>
+    <!-- Easy Questions, Category Animals-->
+    <string-array name="questions_animals_easy">
+        <item>What is the name for a male bee that comes from an unfertilized egg?:Drone:Beestard:Bee:Worker</item>
+        <item>What is the national animal of Scotland?:Unicorn:Sheep:Dragon:Loch Ness Monster</item>
+        <item>A flamboyance is a group of what animal?:Flamingo:Ostrich:Dragon:Striped Love Beetle</item>
+        <item>What is the most popular breed of dog in the United States?:Labrador Retriever:American Foxhound:Alaskan Malamute:Boston Terrier</item>
+        <item>How many hearts does an octopus have?:Three:Eight:One:Five</item>
+    </string-array>
+
+    <!-- Easy Questions, Category Animals-->
+    <string-array name="questions_animals_hard">
+        <item>"Cynophobia" is the fear of what kind of animal?:Dogs:Cats:Blue Whales:Axolotls</item>
+        <item>The Chihuahua is a breed of dog believed to originate from what country?:Mexico:Chile:Papa New Guinea:Austria \m/(⌐■_■)</item>
+        <item>What do dragonflies prefer to eat?:Mosquitoes:Ladybugs:Butterflies:Leaves</item>+
+        <item>Which bird is often associated with delivering babies?:Stork:Eagle:Pelican:Vulture</item>
+        <item>What animal has the largest ears?:African Elephant:Indian Elephant:Blue Whale:Fennec Fox</item>
+    </string-array>
+
+    <!-- Easy Questions, Category Books-->
+    <string-array name="question_books_easy">
+        <item>Which doesn\'t belong to the houses at "Hogwarts School of Witchcraft and Wizardry"?:Sniffingdoor:Hufflepuff:Ravenclaw:Slytherin</item>
+        <item>What musical instrument did Sherlock Holmes play?:Violin:Guitar:Triangle:Great Highland Bagpipe</item>
+        <item>In the children\'s books about a 25 foot tall red dog, what is the name of the dog?:Clifford:Ribsy:Irish Red:Harry</item>
+        <item>Who is the author of the novella "The Metamorphosis", first published in 1915?:Franz Kafka:Hermann Hesse:Hans Fallada:Theodor Storm</item>
+        <item>Quasimodo is a fictional character from what novel?:The Hunchback of Notre-Dam:Lord of the Rings:The Lion King:Snow White and the Seven Dwarfs</item>
+    </string-array>
+
+    <!-- Hard Questions, Category Books-->
+    <string-array name="question_books_hard">
+        <item>Which British author wrote the popular children\'s novel "James and the Giant Peach"?:Roald Dahl:Stephen King:Lewis Carroll:Donald Trump</item>
+        <item>Hopalong Cassidy is a fictional cowboy hero, what was the name of his horse?:Topper:Roach:Secretariat:Lassie</item>
+        <item>According to Guinness World Records, which author has the most published works?:L. Ron Hubbard:Nora Roberts:Phillip Parker:Sir Arthur Conan Doyle</item>
+        <item>Cogito ergo sum, "I think, therefore I am", is a Latin phrase by which philosopher?:Ren\u00E8 Descartes:Cicero:Isaac Newton:Friedrich Nietzsche</item>
+        <item>Which book was famously rejected by 12 publishers before finally being accepted by Bloomsbury?:Harry Potter and The Philosopher\'s Stone:The Da Vinci Code:The Time Traveler\'s Wife:Cloud Atlas</item>
+    </string-array>
+    <!-- Easy Questions, Category Netflix -->
+    <string-array name="question_netflix_easy">
+        <item>What was the name of the kleptomaniac monkey in the Disney Movie "Aladdin"?:Abu:Kong:Tarzan:Mowgli</item>
+        <item>What is the name of Mickey Mouse\'s dog?:Pluto:Goofy:Max:Bolt</item>
+        <item>Created by Charlie Brooker, season three of which dark, dystopian series landed on Netflix this year?:Black Mirror:Stanger Things:Orphan Black:3\%%</item>
+        <item>Which film tells the story of an American post-apocalyptic event, starring Will Smith, who plays US Army virologist Robert Neville?:I Am Legend:Suicide Squad:Winter\'s Tale:Men in Black</item>
+        <item>What is the name of the character played by Kevin Spacey in the Netflix original series House of Cards?:Frank Underwood:Mike Overstone:Sam Abovetree:John Beyondwater</item>
+    </string-array>
+
+    <!-- Hard Questions, Category Netflix -->
+    <string-array name="question_netflix_hard">
+        <item>In what year was Alfred Hitchcock\'s psychological thriller "Psycho" released?:1960:1972:1968:1957</item>
+        <item>What is Michael J. Fox\'s middle name?:Andrew:Jay:Malcolm:John</item>
+        <item>Who sings the opening credits theme of "Orange is the New Black"?:Regina Spektor:Alanis Morissette:Shakira:Fiona Apple</item>
+        <item>Which table top role playing game were the children playing in Stranger Things?:Dungeons and Dragons:Pathfinder:World of Warcraft:Call of Cthulhu</item>
+        <item>Name one of Jessica Jones\' powers on "Jessica Jones":Super Jumping:Mind Control:Invisibility:Immortality</item>
+    </string-array>
+
+
+    <!-- Easy Questions, Category Digital World -->
+    <string-array name="question_digital_world_easy">
+        <item>In a photo editing program, which color does not correspond to the letters RGB?:Yellow:Red:Green:Blue</item>
+        <item>What is Twitter\'s maximum number of characters for a message?:140:120:260:180</item>
+        <item>What does GIF mean?:Graphics Interchange Format:Goofy Inspirational Fun:Google It Fella:Global Image Format</item>
+        <item>1,024 Gigabytes are equal to one &#8230;&#8230;?:Terabyte:Petabyte:Exabyte:Hot Dog</item>
+        <item>What is YouTubes slogan?:Broadcast Yourself:Just Video It:Think Different:Watch Ads for Free</item>
+    </string-array>
+
+    <!-- Hard Questions, Category Digital World -->
+    <string-array name="question_digital_world_hard">
+        <item>The first person shooter video game "Doom" was first released in what year?:1993:1991:1989:1994</item>
+        <item>Fonts that contain small decorative lines at the end of a stroke are known as what?:Serif Fonts:Sans-Serif Fonts:Comics-Sans Fonts:Bold Fonts</item>
+        <item>What does JPEG mean?:Joint Picture Experts Group:Jelly Pixel Economy Group:Joint Photographic Elders Group:Just Popular Expert Guys</item>
+        <item>What was the highest selling single model of personal computer ever?:Commodore 64:TRS-80:Apple II:Alienware Aurora R5</item>
+        <item>What is 2 in binary?:10:010001:01:11</item>
+    </string-array>
+
+    <!-- Bonus Questions -->
+    <string-array name="question_bonus">
+        <item>Which artist is credited with developing linear perspective?:Brunelleschi:Leonardo Da Vinci:Stefano da Verona:Duccio</item>
+        <item>Who is generally acknowledged as the "Father of the Modern Periodic Table"?:Dmitri Mendeleev:John Dalton:Thomas Graham:Marie Curie</item>
+        <item>What is the medical name for the big toe?:Hallux:Phalanx:Cranium:Pinna</item>
+        <item>How many relatives could 2 rats create in just 18 months?:over 1 million:ca. 10 000:ca. 50 000:under 1 thousand</item>
+        <item>Which of the following products was sold as medicine in the 1830s?:Ketchup:Coca Cola:Chocolate Cookies:Apple Pie</item>
+        <item>Where do most of the camels worldwide live?:Australia:Somalia:Austria:Egypt</item>
+        <item>Which space craft set off for Jupiter in 1972?:Pioneer 10:Apollo 13:New Horizons:Sputnik 2</item>
+        <item>What was Elton John\’s first U.S. No. 1 Hit?:Crocodile Rock:Bennie and the Jets:Don\'t Go Breaking My Heart:Tiny Dancer</item>
+        <item>How many Apollo missions landed men on the moon?:6:2:4:1</item>
+        <item>In arithmetic, what is the value of "4!"(four factorial)?:24:32:124:12</item>
+        <item>Suharto held the office of president in which large Asian nation?:Indonesia:Malaysia:Japan:Thailand</item>
+        <item>In which city will you find Michelangelo\’s famous 17-feet-tall marble sculpture "David"?:Florence:Venice:Turin:Rome</item>
+        <item>Which car manufacturer makes the models Qashqai, Juke, and Note?:Nissan:Toyota:Subaru:Suzuki</item>
+        <item>Who won Super Bowl XVII?:Washington Redskins:Chicago Bears:New York Yankees:Real Madrid CF</item>
+        <item>Give the alternative name for a Mountain Ash tree.:Rowan:Yggdrasil:Burned Oak:Fire Maple</item>
+        <item>What flavour is Cointreau?:Orange:Apple:Chocolate:Meat</item>
+        <item>Complete following numerical series\n4_16_64_256_1024_?:4096:2048:1536:4224</item>
+    </string-array>
+</resources>

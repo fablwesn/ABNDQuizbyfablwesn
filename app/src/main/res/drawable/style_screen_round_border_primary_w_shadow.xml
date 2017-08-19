@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- used as a floating textbox for menus and the wizard -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- shadow -->
+    <item>
+        <shape>
+            <solid android:color="@color/colorShadow"/>
+
+            <padding
+
+
+                android:right="@dimen/tiny"
+                android:bottom="@dimen/tiny" />
+
+            <corners
+                android:bottomLeftRadius="@dimen/xlarge"
+                android:bottomRightRadius="@dimen/small"
+                android:topLeftRadius="@dimen/xxxlarge"
+                android:topRightRadius="@dimen/xlarge" />
+        </shape>
+
+    </item>
+
+    <!-- border -->
+    <item>
+        <shape>
+            <solid android:color="@color/colorPrimaryLight" />
+
+            <stroke
+                android:width="@dimen/small"
+                android:color="@color/colorPrimary" />
+
+            <padding
+                android:bottom="@dimen/small"
+                android:left="@dimen/small"
+                android:right="@dimen/small"
+                android:top="@dimen/small" />
+
+            <corners
+                android:bottomLeftRadius="@dimen/small"
+                android:bottomRightRadius="@dimen/small"
+                android:topLeftRadius="@dimen/small"
+                android:topRightRadius="@dimen/small" />
+        </shape>
+    </item>
+</layer-list>

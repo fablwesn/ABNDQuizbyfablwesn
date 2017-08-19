@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- changes the ImageButtons background depending on ots isFocused state -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/style_avatar_background" android:state_focused="false"/>
+    <item android:drawable="@drawable/style_avatar_background_focus" android:state_focused="true"/>
+</selector>

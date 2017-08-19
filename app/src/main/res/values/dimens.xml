@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+
+                                                 Layout
+                                                 ¯¯¯¯¯¯
+    -->
+    <!-- for easier readability, for Layouts controlled by weight -->
+    <dimen name="weight_controlled">0dp</dimen>
+
+    <!-- standard values, mostly used for margin/padding -->
+    <dimen name="nano">2dp</dimen>
+    <dimen name="tiny">4dp</dimen>
+    <dimen name="small">8dp</dimen>
+    <dimen name="medium">16dp</dimen>
+    <dimen name="large">24dp</dimen>
+    <dimen name="xlarge">48dp</dimen>
+    <dimen name="xxlarge">56dp</dimen>
+    <dimen name="xxxlarge">72dp</dimen>
+    <dimen name="huge">88dp</dimen>
+
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                                      Text
+                                                      ¯¯¯¯
+    -->
+    <dimen name="system_text_default_sp">16sp</dimen>
+    <dimen name="body_default_sp">16sp</dimen>
+    <dimen name="subheading_default_sp">18sp</dimen>
+    <dimen name="headline_default_sp">20sp</dimen>
+    <dimen name="faint_default_sp">12sp</dimen>
+    <!-- userInputBtn TextSize -->
+    <dimen name="btn_txt_big_game_screen_sp">26sp</dimen>
+
+    <!--_________________________________________________________________________________________-->
+
+    <!--¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯-->
+    <!--
+                                                  View Elements
+                                                  ¯¯¯¯¯¯¯¯¯¯¯¯¯
+    -->
+    <!-- smallest buttons, don't go below -->
+    <dimen name="btn_smallest_allowed">48dp</dimen>
+    <!-- Size of the CreateUser-Button, displayed on the StartScreen -->
+    <dimen name="btn_create_user_width">104dp</dimen>
+    <dimen name="btn_create_user_height">72dp</dimen>
+    <!-- Height of the previous and next/finish buttons in the CreateUserWizard -->
+    <dimen name="btn_create_user_wizard_load_state">56dp</dimen>
+
+    <!-- Size of the LoadUser- and DeleteUser-Button, displayed on the StartScreen -->
+    <dimen name="btn_load_delete_user_width">88dp</dimen>
+    <dimen name="btn_load_delete_user_height">56dp</dimen>
+
+    <!-- Size of footer img -->
+    <dimen name="img_footer_wizard_width">190dp</dimen>
+
+    <!-- avatar size in game -->
+    <dimen name="img_avatar_game_width">88dp</dimen>
+    <dimen name="img_avatar_game_height">88dp</dimen>
+
+    <!-- used for the avatar image and the two buttons on gameScreen -->
+    <dimen name="user_bar_outer_height">88dp</dimen>
+    <dimen name="user_bar_outer_width">88dp</dimen>
+
+    <!-- menu button width height gameScreen -->
+    <dimen name="btn_menu_game_height">40dp</dimen>
+
+    <!-- joker buttons -->
+    <dimen name="btn_joker_game">48dp</dimen>
+    <!-- submitAnswer Button -->
+    <dimen name="btn_submit_answer_game_width">172dp</dimen>
+
+    <!--_________________________________________________________________________________________-->
+</resources>
