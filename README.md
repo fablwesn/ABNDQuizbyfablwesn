@@ -2,9 +2,46 @@
 
 Quiz App for ABND by Google & Udacity - 3rd Project Submission
 
+## Preview
+
+- Animated GIFs
+
+  - [CreateUser Wizard](https://raw.githubusercontent.com/fablwesn/ABNDQuizbyfablwesn/master/preview/preview_wizard.gif)
+  - [Quiz Question](https://raw.githubusercontent.com/fablwesn/ABNDQuizbyfablwesn/master/preview/preview_correct_answer.gif) - including correct answer
+  - [Wrong Answer entered](https://raw.githubusercontent.com/fablwesn/ABNDQuizbyfablwesn/master/preview/preview_wrong_answer.gif)
+  - [Jokers used](https://raw.githubusercontent.com/fablwesn/ABNDQuizbyfablwesn/master/preview/preview_joker.gif)
+  - [Info Menu](https://raw.githubusercontent.com/fablwesn/ABNDQuizbyfablwesn/master/preview/preview_menu_info.gif) - also displayed immediately when a user logs in for the first time
+  - [Main Menu](https://raw.githubusercontent.com/fablwesn/ABNDQuizbyfablwesn/master/preview/preview_menu_menu.gif)
+  
+  ** SPOILER **
+  - [Statistics Menu](https://raw.githubusercontent.com/fablwesn/ABNDQuizbyfablwesn/master/preview/preview_menu_statistics.gif)
+  - [Hidden Question](https://raw.githubusercontent.com/fablwesn/ABNDQuizbyfablwesn/master/preview/preview_secret_question.gif) - contains the CheckBox question with multiple correct answers
+  - [Cheat Mode](https://raw.githubusercontent.com/fablwesn/ABNDQuizbyfablwesn/master/preview/preview_cheat_mode.gif) - contains the EditText question 
+
+- static PNGs
+
+![Preview of Start Page](https://raw.githubusercontent.com/fablwesn/ABNDQuizbyfablwesn/master/preview/preview_abndquiz_startpage.PNG)
+
+![Preview of Quiz Page](https://raw.githubusercontent.com/fablwesn/ABNDQuizbyfablwesn/master/preview/preview_abndquiz_quiz.PNG)
+![Preview of Menu Page](https://raw.githubusercontent.com/fablwesn/ABNDQuizbyfablwesn/master/preview/preview_abndquiz_menu.PNG)
+
 ## Author
 
 * **Darijo Barucic** - *Initial work* - [fablwesn](https://github.com/fablwesn)
+
+## Installing
+
+You need the latest version of Android Studio and an emulator/device with minimum API Level 21.
+
+To have everything displayed correctly, please fulfill following requirements:
+
+- Emulating in Android Studio
+  - install SDK for min. API Level 21
+  - use Nexus 6 for emulating and displaying the preview
+
+- Running on Hardware Device
+  - have at least API Level 21 installed
+  - only tested on Samsung Galaxy S6, chose a device with similar display (560dpi)
 
 ## Game Rules
 
@@ -31,43 +68,6 @@ Quiz App for ABND by Google & Udacity - 3rd Project Submission
 
   - Hidden Question, when found and answered correctly, you receive 50 Achievement Points, unlocking the "Statistics" tab in the menu
   - Cheat Mode, does the same as above but is hidden somewhere else and can only be used if the hidden question hasn't been answered already
-
-## Preview
-
-- Animated GIFs
-
-  - [CreateUser Wizard](https://raw.githubusercontent.com/fablwesn/ABNDQuizbyfablwesn/master/preview/preview_wizard.gif)
-  - [Quiz Question](https://raw.githubusercontent.com/fablwesn/ABNDQuizbyfablwesn/master/preview/preview_correct_answer.gif) - including correct answer
-  - [Wrong Answer entered](https://raw.githubusercontent.com/fablwesn/ABNDQuizbyfablwesn/master/preview/preview_wrong_answer.gif)
-  - [Jokers used](https://raw.githubusercontent.com/fablwesn/ABNDQuizbyfablwesn/master/preview/preview_joker.gif)
-  - [Info Menu](https://raw.githubusercontent.com/fablwesn/ABNDQuizbyfablwesn/master/preview/preview_menu_info.gif) - also displayed immediately when a user logs in for the first time
-  - [Main Menu](https://raw.githubusercontent.com/fablwesn/ABNDQuizbyfablwesn/master/preview/preview_menu_menu.gif)
-  
-  ** SPOILER **
-  - [Statistics Menu](https://raw.githubusercontent.com/fablwesn/ABNDQuizbyfablwesn/master/preview/preview_menu_statistics.gif)
-  - [Hidden Question](https://raw.githubusercontent.com/fablwesn/ABNDQuizbyfablwesn/master/preview/preview_secret_question.gif) - contains the CheckBox question with multiple correct answers
-  - [Cheat Mode](https://raw.githubusercontent.com/fablwesn/ABNDQuizbyfablwesn/master/preview/preview_cheat_mode.gif) - contains the EditText question 
-
-- static PNGs
-
-![Preview of Start Page](https://raw.githubusercontent.com/fablwesn/ABNDQuizbyfablwesn/master/preview/preview_abndquiz_startpage.PNG)
-
-![Preview of Quiz Page](https://raw.githubusercontent.com/fablwesn/ABNDQuizbyfablwesn/master/preview/preview_abndquiz_quiz.PNG)
-![Preview of Menu Page](https://raw.githubusercontent.com/fablwesn/ABNDQuizbyfablwesn/master/preview/preview_abndquiz_menu.PNG)
-
-## Installing
-
-You need the latest version of Android Studio and an emulator/device with minimum API Level 21.
-
-To have everything displayed correctly, please fulfill following requirements:
-
-- Emulating in Android Studio
-  - install SDK for min. API Level 21
-  - use Nexus 6 for emulating and displaying the preview
-
-- Running on Hardware Device
-  - have at least API Level 21 installed
-  - only tested on Samsung Galaxy S6, chose a device with similar display (560dpi)
 
 ## Acknowledgments
 
