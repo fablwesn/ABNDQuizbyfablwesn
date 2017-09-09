@@ -4,7 +4,7 @@ Quiz App for ABND by Google & Udacity - 3rd Project Submission
 
 ## Preview
 
-- Animated GIFs
+- Animated GIFs (**click to view**)
 
   - [CreateUser Wizard](https://raw.githubusercontent.com/fablwesn/ABNDQuizbyfablwesn/master/preview/preview_wizard.gif)
   - [Quiz Question](https://raw.githubusercontent.com/fablwesn/ABNDQuizbyfablwesn/master/preview/preview_correct_answer.gif) - including correct answer
