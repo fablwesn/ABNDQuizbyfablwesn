@@ -10,9 +10,9 @@ Quiz App for ABND by Google & Udacity - 3rd Project Submission
 
 ### General
 
-- There are 4 Quiz-Categorys to chose from. Each contains 10 questions, 5 easy and 5 hard ones.
-- 2 Joker are available for use for **each** question. Question-PointValue reduced on usage. (DoubleTime Joker & 50/50 Joker)
-- To win the game, answer each one correctly!
+- There are 4 Quiz-Categories to chose from. Each contains 10 questions, 5 easy and 5 hard ones.
+- 2 Jokers are available for use for **each** question. The Question-PointValue is reduced on usage. (DoubleTime Joker & 50/50 Joker)
+- To win the game, answer all 40 questions correctly!
 - If you answer incorrectly or the time runs out, you lose and the question will reset and start from the beginning.
 - After each correctly answered question, you get to chose a bonus question. Jokers disabled! ** these are not required to win the game **
 
@@ -25,7 +25,7 @@ Quiz App for ABND by Google & Udacity - 3rd Project Submission
 - using a Joker reduces the points you will get, if answered correctly
   - using the DoubleTime Joker halfes the base point value of the question being used on
   - using the 50/50 Joker reduces the base point value of the question being used on by a third
-  - _Example: Both Jokers used on an easy question would look like this: 150 - (150/3) - (150/2) scoring the user 25 points on answering correctly. Try to avoid using both jokers on one question to achieve big highscores!
+  - _Example: Both Jokers used on an easy question would look like this: 150 - (150/3) - (150/2) scoring the user 25 points on answering correctly. Try to avoid using both jokers on one question to achieve big highscores!_
   
 ### Secrets
 
